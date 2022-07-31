@@ -52,21 +52,21 @@
           <legend class="feedback-personals-group__title">Представьтесь:</legend>
           <ul class="feedback-personals-group__list">
             <li class="feedback-personals-group__item">
-              <label class="feedback-personals-group__control">
-                <span class="feedback-personals-group__control-label">Имя*:</span>
-                <input class="feedback-personals-group__control-input" type="text" name="name" required>
+              <label class="feedback-personals-group__control personals-field">
+                <span class="personals-field__control-label">Имя*:</span>
+                <input class="personals-field__control-input" type="text" name="name" placeholder="Пётр" required>
               </label>
             </li>
             <li class="feedback-personals-group__item">
-              <label class="feedback-personals-group__control">
-                <span class="feedback-personals-group__control-label">Фамилия*:</span>
-                <input class="feedback-personals-group__control-input" type="text" name="surname" required>
+              <label class="feedback-personals-group__control personals-field">
+                <span class="personals-field__control-label">Фамилия*:</span>
+                <input class="personals-field__control-input" type="text" name="surname" placeholder="Пустота" required>
               </label>
             </li>
             <li class="feedback-personals-group__item">
-              <label class="feedback-personals-group__control">
-                <span class="feedback-personals-group__control-label">Отчество*:</span>
-                <input class="feedback-personals-group__control-input" type="text" name="midname" required>
+              <label class="feedback-personals-group__control personals-field">
+                <span class="personals-field__control-label">Отчество*:</span>
+                <input class="personals-field__control-input" type="text" name="midname" placeholder="Викторович" required>
               </label>
             </li>
           </ul>
@@ -76,15 +76,15 @@
           <legend class="feedback-contacts-group__title">Контактная информация:</legend>
           <ul class="feedback-contacts-group__list">
             <li class="feedback-contacts-group__item">
-              <label class="feedback-contacts-group__control">
-                <span class="feedback-contacts-group__control-label">Контактный телефон*:</span>
-                <input class="feedback-contacts-group__control-input" type="text" name="phone" required>
+              <label class="feedback-contacts-group__control contacts-field contacts-field--phone">
+                <span class="contacts-field__control-label">Контактный телефон*:</span>
+                <input class="contacts-field__control-input" type="text" name="phone" placeholder="Введите телефон" required>
               </label>
             </li>
             <li class="feedback-contacts-group__item">
-              <label class="feedback-contacts-group__control">
-                <span class="feedback-contacts-group__control-label">Электронная почта*:</span>
-                <input class="feedback-contacts-group__control-input" type="text" name="email" required>
+              <label class="feedback-contacts-group__control contacts-field contacts-field--email">
+                <span class="contacts-field__control-label">Электронная почта*:</span>
+                <input class="contacts-field__control-input" type="text" name="email" placeholder="Введите e-mail" required>
               </label>
             </li>
           </ul>
@@ -94,21 +94,21 @@
           <legend class="feedback-impression-group__title">Ваше общее впечатление:</legend>
           <ul class="feedback-impression-group__list">
             <li class="feedback-impression-group__item">
-              <label class="feedback-impression-group__control">
-                <input class="feedback-impression-group__control-input" type="radio" name="impression" value="good">
-                <span class="feedback-impression-group__control-label">Скорее положительное</span>
+              <label class="feedback-impression-group__control impression-field">
+                <input class="impression-field__control-input impression-field__control-input--checked" type="radio" name="impression" value="good" checked>
+                <span class="impression-field__control-label">Скорее положительное</span>
               </label>
             </li>
             <li class="feedback-impression-group__item">
-              <label class="feedback-impression-group__control">
-                <input class="feedback-impression-group__control-input" type="radio" name="impression" value="bad">
-                <span class="feedback-impression-group__control-label">Скорее отрицательное</span>
+              <label class="feedback-impression-group__control impression-field">
+                <input class="impression-field__control-input" type="radio" name="impression" value="bad">
+                <span class="impression-field__control-label">Скорее отрицательное</span>
               </label>
             </li>
             <li class="feedback-impression-group__item">
-              <label class="feedback-impression-group__control">
-                <input class="feedback-impression-group__control-input" type="radio" name="impression" value="dont-know">
-                <span class="feedback-impression-group__control-label">Затрудняюсь ответить</span>
+              <label class="feedback-impression-group__control impression-field">
+                <input class="impression-field__control-input" type="radio" name="impression" value="dont-know">
+                <span class="impression-field__control-label">Затрудняюсь ответить</span>
               </label>
             </li>
           </ul>
@@ -118,27 +118,27 @@
           <legend class="feedback-attraction-group__title">Ваше общее впечатление:</legend>
           <ul class="feedback-attraction-group__list">
             <li class="feedback-attraction-group__item">
-              <label class="feedback-attraction-group__control">
-                <input class="feedback-attraction-group__control-input" type="checkbox" name="devil-bridge" checked>
-                <span class="feedback-attraction-group__control-label">Мост Дьявола</span>
+              <label class="feedback-attraction-group__control attraction-field">
+                <input class="attraction-field__control-input attraction-field__control-input--checked" type="checkbox" name="devil-bridge" checked>
+                <span class="attraction-field__control-label">Мост Дьявола</span>
               </label>
             </li>
             <li class="feedback-attraction-group__item">
-              <label class="feedback-attraction-group__control">
-                <input class="feedback-attraction-group__control-input" type="checkbox" name="mountain-bell" checked>
-                <span class="feedback-attraction-group__control-label">Гора-Колокол</span>
+              <label class="feedback-attraction-group__control attraction-field">
+                <input class="attraction-field__control-input attraction-field__control-input--checked" type="checkbox" name="mountain-bell" checked>
+                <span class="attraction-field__control-label">Гора-Колокол</span>
               </label>
             </li>
             <li class="feedback-attraction-group__item">
-              <label class="feedback-attraction-group__control">
-                <input class="feedback-attraction-group__control-input" type="checkbox" name="slide-park" checked>
-                <span class="feedback-attraction-group__control-label">Слайд-парк</span>
+              <label class="feedback-attraction-group__control attraction-field">
+                <input class="attraction-field__control-input attraction-field__control-input--checked" type="checkbox" name="slide-park" checked>
+                <span class="attraction-field__control-label">Слайд-парк</span>
               </label>
             </li>
             <li class="feedback-attraction-group__item">
-              <label class="feedback-attraction-group__control">
-                <input class="feedback-attraction-group__control-input" type="checkbox" name="red-rocks">
-                <span class="feedback-attraction-group__control-label">Красные скалы</span>
+              <label class="feedback-attraction-group__control attraction-field">
+                <input class="attraction-field__control-input" type="checkbox" name="red-rocks">
+                <span class="attraction-field__control-label">Красные скалы</span>
               </label>
             </li>
           </ul>
@@ -146,12 +146,12 @@
 
         <fieldset class="feedback-form__group feedback-description-group">
           <legend class="feedback-description-group__title">Опишите свои эмоции:</legend>
-          <label class="feedback-description-group__control">
-            <textarea class="feedback-description-group__control-input" name="feedback-description" placeholder="Опишите подробно все свои восторги "></textarea>
+          <label class="feedback-description-group__control description-field">
+            <textarea class="description-field__control-input" name="feedback-description" placeholder="Опишите подробно все свои восторги "></textarea>
           </label>
         </fieldset>
 
-        <button class="feedback-form__button" type="submit">Отправить отзыв</button>
+        <button class="feedback-form__button button" type="submit">Отправить отзыв</button>
         <span class="feedback-form__note">*Обязательные поля</span>
       </form>
 
@@ -200,7 +200,7 @@
       <div class="modal-error">
         <h2 class="modal-error__title">Что-то пошло не так!</h2>
         <p class="modal-error__error-message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal-error__button" type="button">Ок</button>
+        <button class="modal-error__button button" type="button">Ок</button>
       </div>
     </div>
 
@@ -208,7 +208,7 @@
       <div class="modal-approve">
         <h2 class="modal-approve__title">Ваш отзыв отправлен!</h2>
         <p class="modal-approve__approve-message">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="modal-approve__button" type="button">Закрыть окно</button>
+        <button class="modal-approve__button button" type="button">Закрыть окно</button>
       </div>
     </div>
   </body>

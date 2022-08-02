@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>HTML Academy: Седона. Отзывы</title>
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -42,119 +42,104 @@
       <header class="promo promo--size-s">
         <img class="promo__text promo__text--size-s" src="img/sedona_text.svg" alt="Welcome to the gorgeous Sedona!">
       </header>
-      <div class="feedback__preview preview">
-        <h1 class="preview__title">Оставьте свой отзыв</h1>
-        <p class="preview__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      </div>
+      <section class="feedback">
+        <div class="feedback__preview preview">
+          <h1 class="preview__title">Оставьте свой отзыв</h1>
+          <p class="preview__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
 
-      <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="feedback-form__group feedback-personals-group">
-          <legend class="feedback-personals-group__title">Представьтесь:</legend>
-          <ul class="feedback-personals-group__list">
-            <li class="feedback-personals-group__item">
-              <label class="feedback-personals-group__control personals-field">
-                <span class="personals-field__control-label">Имя*:</span>
-                <input class="personals-field__control-input" type="text" name="name" placeholder="Пётр" required>
-              </label>
-            </li>
-            <li class="feedback-personals-group__item">
-              <label class="feedback-personals-group__control personals-field">
-                <span class="personals-field__control-label">Фамилия*:</span>
-                <input class="personals-field__control-input" type="text" name="surname" placeholder="Пустота" required>
-              </label>
-            </li>
-            <li class="feedback-personals-group__item">
-              <label class="feedback-personals-group__control personals-field">
-                <span class="personals-field__control-label">Отчество*:</span>
-                <input class="personals-field__control-input" type="text" name="midname" placeholder="Викторович" required>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="feedback-form__group feedback-personals-group">
+            <legend class="feedback-personals-group__title">Представьтесь:</legend>
 
-        <fieldset class="feedback-form__group feedback-contacts-group">
-          <legend class="feedback-contacts-group__title">Контактная информация:</legend>
-          <ul class="feedback-contacts-group__list">
-            <li class="feedback-contacts-group__item">
-              <label class="feedback-contacts-group__control contacts-field contacts-field--phone">
-                <span class="contacts-field__control-label">Контактный телефон*:</span>
-                <input class="contacts-field__control-input" type="text" name="phone" placeholder="Введите телефон" required>
-              </label>
-            </li>
-            <li class="feedback-contacts-group__item">
-              <label class="feedback-contacts-group__control contacts-field contacts-field--email">
-                <span class="contacts-field__control-label">Электронная почта*:</span>
-                <input class="contacts-field__control-input" type="text" name="email" placeholder="Введите e-mail" required>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+            <label class="feedback-personals-group__control personals-field">
+              <span class="personals-field__control-label">Имя*:</span>
+              <input class="personals-field__control-input" type="text" name="name" placeholder="Пётр" required>
+            </label>
 
-        <fieldset class="feedback-form__group feedback-impression-group">
-          <legend class="feedback-impression-group__title">Ваше общее впечатление:</legend>
-          <ul class="feedback-impression-group__list">
-            <li class="feedback-impression-group__item">
-              <label class="feedback-impression-group__control impression-field">
-                <input class="impression-field__control-input impression-field__control-input--checked" type="radio" name="impression" value="good" checked>
-                <span class="impression-field__control-label">Скорее положительное</span>
-              </label>
-            </li>
-            <li class="feedback-impression-group__item">
-              <label class="feedback-impression-group__control impression-field">
-                <input class="impression-field__control-input" type="radio" name="impression" value="bad">
-                <span class="impression-field__control-label">Скорее отрицательное</span>
-              </label>
-            </li>
-            <li class="feedback-impression-group__item">
-              <label class="feedback-impression-group__control impression-field">
-                <input class="impression-field__control-input" type="radio" name="impression" value="dont-know">
-                <span class="impression-field__control-label">Затрудняюсь ответить</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+            <label class="feedback-personals-group__control personals-field">
+              <span class="personals-field__control-label">Фамилия*:</span>
+              <input class="personals-field__control-input" type="text" name="surname" placeholder="Пустота" required>
+            </label>
 
-        <fieldset class="feedback-form__group feedback-attraction-group">
-          <legend class="feedback-attraction-group__title">Ваше общее впечатление:</legend>
-          <ul class="feedback-attraction-group__list">
-            <li class="feedback-attraction-group__item">
-              <label class="feedback-attraction-group__control attraction-field">
-                <input class="attraction-field__control-input attraction-field__control-input--checked" type="checkbox" name="devil-bridge" checked>
-                <span class="attraction-field__control-label">Мост Дьявола</span>
-              </label>
-            </li>
-            <li class="feedback-attraction-group__item">
-              <label class="feedback-attraction-group__control attraction-field">
-                <input class="attraction-field__control-input attraction-field__control-input--checked" type="checkbox" name="mountain-bell" checked>
-                <span class="attraction-field__control-label">Гора-Колокол</span>
-              </label>
-            </li>
-            <li class="feedback-attraction-group__item">
-              <label class="feedback-attraction-group__control attraction-field">
-                <input class="attraction-field__control-input attraction-field__control-input--checked" type="checkbox" name="slide-park" checked>
-                <span class="attraction-field__control-label">Слайд-парк</span>
-              </label>
-            </li>
-            <li class="feedback-attraction-group__item">
-              <label class="feedback-attraction-group__control attraction-field">
-                <input class="attraction-field__control-input" type="checkbox" name="red-rocks">
-                <span class="attraction-field__control-label">Красные скалы</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+            <label class="feedback-personals-group__control personals-field">
+              <span class="personals-field__control-label">Отчество*:</span>
+              <input class="personals-field__control-input" type="text" name="midname" placeholder="Викторович" required>
+            </label>
 
-        <fieldset class="feedback-form__group feedback-description-group">
-          <legend class="feedback-description-group__title">Опишите свои эмоции:</legend>
-          <label class="feedback-description-group__control description-field">
-            <textarea class="description-field__control-input" name="feedback-description" placeholder="Опишите подробно все свои восторги "></textarea>
-          </label>
-        </fieldset>
+          </fieldset>
 
-        <button class="feedback-form__button button" type="submit">Отправить отзыв</button>
-        <span class="feedback-form__note">*Обязательные поля</span>
-      </form>
+          <fieldset class="feedback-form__group feedback-contacts-group">
+            <legend class="feedback-contacts-group__title">Контактная информация:</legend>
 
+            <label class="feedback-contacts-group__control contacts-field contacts-field--phone">
+              <span class="contacts-field__control-label">Контактный телефон*:</span>
+              <input class="contacts-field__control-input" type="text" name="phone" placeholder="Введите телефон" required>
+            </label>
+
+            <label class="feedback-contacts-group__control contacts-field contacts-field--email">
+              <span class="contacts-field__control-label">Электронная почта*:</span>
+              <input class="contacts-field__control-input" type="text" name="email" placeholder="Введите e-mail" required>
+            </label>
+
+          </fieldset>
+
+          <fieldset class="feedback-form__group feedback-impression-group">
+            <legend class="feedback-impression-group__title">Ваше общее впечатление:</legend>
+
+            <label class="feedback-impression-group__control impression-field">
+              <input class="impression-field__control-input impression-field__control-input--checked" type="radio" name="impression" value="good" checked>
+              <span class="impression-field__control-label">Скорее положительное</span>
+            </label>
+
+            <label class="feedback-impression-group__control impression-field">
+              <input class="impression-field__control-input" type="radio" name="impression" value="bad">
+              <span class="impression-field__control-label">Скорее отрицательное</span>
+            </label>
+
+            <label class="feedback-impression-group__control impression-field">
+              <input class="impression-field__control-input" type="radio" name="impression" value="dont-know">
+              <span class="impression-field__control-label">Затрудняюсь ответить</span>
+            </label>
+
+          </fieldset>
+
+          <fieldset class="feedback-form__group feedback-attraction-group">
+            <legend class="feedback-attraction-group__title">Ваше общее впечатление:</legend>
+
+            <label class="feedback-attraction-group__control attraction-field">
+              <input class="attraction-field__control-input attraction-field__control-input--checked" type="checkbox" name="devil-bridge" checked>
+              <span class="attraction-field__control-label">Мост Дьявола</span>
+            </label>
+
+            <label class="feedback-attraction-group__control attraction-field">
+              <input class="attraction-field__control-input attraction-field__control-input--checked" type="checkbox" name="mountain-bell" checked>
+              <span class="attraction-field__control-label">Гора-Колокол</span>
+            </label>
+
+            <label class="feedback-attraction-group__control attraction-field">
+              <input class="attraction-field__control-input attraction-field__control-input--checked" type="checkbox" name="slide-park" checked>
+              <span class="attraction-field__control-label">Слайд-парк</span>
+            </label>
+
+            <label class="feedback-attraction-group__control attraction-field">
+              <input class="attraction-field__control-input" type="checkbox" name="red-rocks">
+              <span class="attraction-field__control-label">Красные скалы</span>
+            </label>
+
+          </fieldset>
+
+          <fieldset class="feedback-form__group feedback-description-group">
+            <legend class="feedback-description-group__title">Опишите свои эмоции:</legend>
+            <label class="feedback-description-group__control description-field">
+              <textarea class="description-field__control-input" name="feedback-description" placeholder="Опишите подробно все свои восторги "></textarea>
+            </label>
+          </fieldset>
+
+          <button class="feedback-form__button button" type="submit">Отправить отзыв</button>
+          <span class="feedback-form__note">*Обязательные поля</span>
+        </form>
+      </section>
     </main>
     <footer class="main-footer">
       <h2 class="visually-hidden">Наши контакты</h2>

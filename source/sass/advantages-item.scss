@@ -1,8 +1,15 @@
+.advantages-item__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages-item__description {
+  text-transform: uppercase;
+}
+
 .advantages-item--advanced {
   background-color: #81B3D2;
   color: #ffffff;
-}
-
-.advantages-item__title {
-
 }

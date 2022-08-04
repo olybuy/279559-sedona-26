@@ -4,6 +4,9 @@
   list-style-type: none;
 }
 
-.socials__item {
+.socials__link {
+  display: block;
+  width: 48px;
+  height: 48px;
   background-color: #81b3d2;
 }

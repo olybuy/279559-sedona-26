@@ -1,8 +1,13 @@
 .button {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: block;
   background-color: #81b3d2;
+  border-width: 0;
   color: #ffffff;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }

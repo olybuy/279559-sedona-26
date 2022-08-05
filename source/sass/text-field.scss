@@ -1,4 +1,5 @@
 .text-field__label {
+  display: block;
   text-transform: uppercase;
 }
 
@@ -6,10 +7,6 @@
   width: 100%;
   padding-top: 16px;
   padding-bottom: 16px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-width: 0;
-}
-
-.text-field__label {
-  display: block;
 }

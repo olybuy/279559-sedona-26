@@ -3,24 +3,5 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
-  counter-reset: item;
 }
 
-.advantages-item__title::after {
-  content: "№ " counter(item);
-  counter-increment: item;
-  display: block;
-  font-weight: 400;
-}
-
-.advantages-list::before {
-  position: absolute;
-  top: -20px;
-  display: block;
-  width: 100%;
-  height: 47px;
-  background-image: url("../img/white-devider-main.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  content: "";
-}

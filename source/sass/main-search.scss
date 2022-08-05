@@ -1,8 +1,12 @@
 .main-search {
+  padding-top: 38px;
+  padding-bottom: 49px;
   text-align: center;
 }
 
 .main-search__title {
+  margin: 0;
+  margin-bottom: 28px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -11,9 +15,8 @@
 }
 
 .main-search__description {
+  margin: 0;
+  margin-bottom: 32px;
   text-transform: uppercase;
 }
 
-.main-search__wrapper {
-  margin-bottom: 49px;
-}

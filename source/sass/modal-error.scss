@@ -1,4 +1,11 @@
+.modal-error {
+  padding: 45px 42px 35px 41px;
+  text-align: center;
+}
+
 .modal-error__title {
+  margin: 0;
+  margin-bottom: 36px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -7,6 +14,8 @@
 }
 
 .modal-error__error-message {
+  margin: 0;
+  margin-bottom: 28px;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;

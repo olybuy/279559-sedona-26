@@ -1,5 +1,6 @@
 .button {
   display: block;
+  margin: 0 auto;
   background-color: #81b3d2;
   border-width: 0;
   color: #ffffff;
@@ -9,12 +10,26 @@
   cursor: pointer;
 }
 
+.button--feedback {
+  width: 281px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+}
+
 .button--search {
+  width: 284px;
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
-.button--modal {
+.button--modal-approve {
+  width: 280px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+}
+
+.button--modal-error {
+  width: 180px;
   padding-top: 18px;
   padding-bottom: 14px;
 }

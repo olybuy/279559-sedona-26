@@ -1,0 +1,40 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 34px 20px;
+  border: 0;
+}
+
+.form-group:not(:last-of-type) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.form-group__title {
+  padding-top: 24px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+
+.form-group__field {
+  display: block;
+}
+
+.form-group__title--text-field {
+  padding-bottom: 20px;
+}
+
+.form-group__title--radio-field {
+  padding-bottom: 30px;
+}
+
+.form-group__title--checkbox-field {
+  padding-bottom: 30px;
+}
+
+.form-group__title--textarea-field {
+  padding-bottom: 20px;
+}

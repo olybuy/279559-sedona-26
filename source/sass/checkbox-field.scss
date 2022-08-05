@@ -1,3 +1,7 @@
+.checkbox-field:not(:last-child) {
+  padding-bottom: 36px;
+}
+
 .checkbox-field__label {
   font-size: 18px;
   line-height: 26px;

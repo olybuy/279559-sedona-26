@@ -1,3 +1,7 @@
+.text-field:not(:last-child) {
+  padding-bottom: 16px;
+}
+
 .text-field__label {
   display: block;
   text-transform: uppercase;

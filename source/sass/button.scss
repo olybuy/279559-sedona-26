@@ -11,25 +11,25 @@
 }
 
 .button--feedback {
-  width: 281px;
+  min-width: 281px;
   padding-top: 18px;
   padding-bottom: 14px;
 }
 
 .button--search {
-  width: 284px;
+  min-width: 284px;
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
 .button--modal-approve {
-  width: 280px;
+  min-width: 280px;
   padding-top: 18px;
   padding-bottom: 14px;
 }
 
 .button--modal-error {
-  width: 180px;
+  min-width: 180px;
   padding-top: 18px;
   padding-bottom: 14px;
 }

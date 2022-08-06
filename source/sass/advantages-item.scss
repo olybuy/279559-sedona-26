@@ -27,6 +27,8 @@
 .advantages-item__photo {
   display: block;
   padding: 0;
+  width: 100%;
+  object-fit: cover;
 }
 
 .advantages-item--base {

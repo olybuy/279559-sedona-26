@@ -1,6 +1,6 @@
 .main-nav {
   position: relative;
-  background-color: #81b3d2;
+  background-color: $primaryColor;
 }
 
 .main-nav__list {
@@ -27,7 +27,7 @@
   display: block;
   padding-top: 17px;
   padding-bottom: 12px;
-  background-color: #81b3d2;
+  background-color: $primaryColor;
   color: #ffffff;
   font-size: 18px;
   line-height: 26px;

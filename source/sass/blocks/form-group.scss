@@ -6,7 +6,7 @@
 }
 
 .form-group:not(:last-of-type) {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid $borderColor;
 }
 
 .form-group__title {
@@ -15,7 +15,7 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #000000;
+  color: $fontSecondaryColor;
   text-align: center;
 }
 

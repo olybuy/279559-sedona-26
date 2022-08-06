@@ -1,6 +1,6 @@
 .advantages-item {
   box-sizing: border-box;
-  background-color: #eeeeee;
+  background-color: $secondaryColor;
 }
 
 .advantages-item__content-wrapper {
@@ -15,7 +15,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
+  color: $fontSecondaryColor;
   text-transform: uppercase;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .advantages-item--advanced {
-  background-color: #81b3d2;
+  background-color: $primaryColor;
   color: #ffffff;
   border: 0;
 }

@@ -36,11 +36,10 @@
 .advantages-sublist-item__title {
   margin: 0;
   margin-bottom: 16px;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
   color: $fontSecondaryColor;
   text-transform: uppercase;
+
+  @include font-style(18px, 26px, 700);
 }
 
 .advantages-sublist-item__description {

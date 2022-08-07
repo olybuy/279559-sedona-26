@@ -8,8 +8,7 @@
 
 .copyright__text {
   margin-right: 5px;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
   text-transform: uppercase;
+
+  @include font-style(14px, 21px, 400);
 }

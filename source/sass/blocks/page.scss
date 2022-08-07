@@ -1,10 +1,9 @@
 .page {
   height: 100%;
   font-family: "PT Sans", sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
   color: $fontPrimaryColor;
+
+  @include font-style(14px, 21px, 400);
 }
 
 .page__body {

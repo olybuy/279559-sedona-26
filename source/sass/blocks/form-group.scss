@@ -11,12 +11,11 @@
 
 .form-group__title {
   padding-top: 24px;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
   text-transform: uppercase;
   color: $fontSecondaryColor;
   text-align: center;
+
+  @include font-style(18px, 26px, 700);
 }
 
 .form-group__field {

@@ -6,4 +6,10 @@
   list-style-type: none;
   background-color: #ffffff;
   color: $fontPrimaryColor;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

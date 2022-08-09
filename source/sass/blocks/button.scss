@@ -4,7 +4,7 @@
   background-color: $primaryColor;
   border-width: 0;
   color: #ffffff;
-  font-weight: 700;
+  font-family: "PT Sans", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -14,22 +14,30 @@
   min-width: 281px;
   padding-top: 18px;
   padding-bottom: 14px;
+
+  @include font-style(21px, 26px, 700);
 }
 
 .button--search {
   min-width: 284px;
   padding-top: 16px;
   padding-bottom: 16px;
+
+  @include font-style(21px, 26px, 700);
 }
 
 .button--modal-approve {
   min-width: 280px;
   padding-top: 18px;
   padding-bottom: 14px;
+
+  @include font-style(18px, 26px, 700);
 }
 
 .button--modal-error {
   min-width: 180px;
   padding-top: 18px;
   padding-bottom: 14px;
+
+  @include font-style(18px, 26px, 700);
 }

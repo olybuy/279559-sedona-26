@@ -59,4 +59,6 @@
 .advantages-sublist-item__description {
   margin: 0;
   text-transform: uppercase;
+
+  @include font-style(14px, 21px, 400);
 }

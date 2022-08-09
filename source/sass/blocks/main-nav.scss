@@ -1,6 +1,7 @@
 .main-nav {
   position: relative;
   box-sizing: border-box;
+  z-index: 2;
 
   @media screen and (min-width: $tablet-width) {
     width: $tablet-width;

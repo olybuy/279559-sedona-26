@@ -11,15 +11,18 @@
 
 .gallery-item__title {
   color: $fontSecondaryColor;
-  font-weight: 700;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+
+  @include font-style(14px, 21px, 700);
 }
 
 .gallery-item__author {
   padding: 0;
   margin: 0;
+
+  @include font-style(14px, 21px, 400);
 }
 
 .gallery-item__likes {

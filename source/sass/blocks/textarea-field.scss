@@ -1,5 +1,13 @@
 .textarea-field__input {
+  padding: 16px;
   width: 100%;
+  font-family: "PT Sans", sans-serif;
   background-color: $inputColor;
   border: 0;
+  box-sizing: border-box;
+}
+
+.textarea-field__input::placeholder {
+  @include font-style(18px, 26px, 700);
+  opacity: 0.3;
 }

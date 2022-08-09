@@ -34,6 +34,11 @@
 .preview--video {
   border-bottom: 0;
   padding: 17px 20px 38px 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 445px;
+    margin: 0 auto;
+  }
 }
 
 .preview--form {

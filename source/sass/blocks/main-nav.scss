@@ -44,6 +44,18 @@
   text-align: center;
 }
 
+.main-nav__item:nth-child(2) {
+  @media screen and (min-width: $tablet-width) {
+    padding-right: 92.5px;
+  }
+}
+
+.main-nav__item:nth-child(3) {
+  @media screen and (min-width: $tablet-width) {
+    padding-left: 92.5px;
+  }
+}
+
 .main-nav__link {
   display: block;
   padding-top: 17px;
@@ -63,4 +75,8 @@
 
     @include font-style(14px, 21px, 700);
   }
+}
+
+.main-nav__link--active {
+  color: #766357;
 }

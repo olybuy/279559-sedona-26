@@ -1,0 +1,11 @@
+.main-header {
+  position: relative;
+  min-height: 56px;
+}
+
+.main-header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}

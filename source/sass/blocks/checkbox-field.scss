@@ -1,0 +1,9 @@
+.checkbox-field:not(:last-child) {
+  padding-bottom: 36px;
+}
+
+.checkbox-field__label {
+  color: $fontSecondaryColor;
+
+  @include font-style(18px, 26px, 700);
+}

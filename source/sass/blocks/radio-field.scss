@@ -1,0 +1,9 @@
+.radio-field:not(:last-child) {
+  padding-bottom: 36px;
+}
+
+.radio-field__label {
+  color: $fontSecondaryColor;
+
+  @include font-style(18px, 26px, 700);
+}

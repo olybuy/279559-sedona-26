@@ -1,0 +1,21 @@
+.modal-error {
+  padding: 45px 42px 35px 41px;
+  text-align: center;
+}
+
+.modal-error__title {
+  margin: 0;
+  margin-bottom: 36px;
+  color: $fontSecondaryColor;
+  text-transform: uppercase;
+
+  @include font-style(21px, 26px, 700);
+}
+
+.modal-error__error-message {
+  margin: 0;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+
+  @include font-style(18px, 26px, 400);
+}

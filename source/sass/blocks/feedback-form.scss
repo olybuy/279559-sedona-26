@@ -1,0 +1,8 @@
+.feedback-form__note {
+  display: block;
+  padding-right: 20px;
+  text-transform: uppercase;
+  text-align: right;
+
+  @include font-style(12px, 21px, 400);
+}

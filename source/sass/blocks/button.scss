@@ -1,0 +1,35 @@
+.button {
+  display: block;
+  margin: 0 auto;
+  background-color: $primaryColor;
+  border-width: 0;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button--feedback {
+  min-width: 281px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+}
+
+.button--search {
+  min-width: 284px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.button--modal-approve {
+  min-width: 280px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+}
+
+.button--modal-error {
+  min-width: 180px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+}

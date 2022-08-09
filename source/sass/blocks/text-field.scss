@@ -1,0 +1,16 @@
+.text-field:not(:last-child) {
+  padding-bottom: 16px;
+}
+
+.text-field__label {
+  display: block;
+  text-transform: uppercase;
+}
+
+.text-field__input {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: $inputColor;
+  border-width: 0;
+}

@@ -1,0 +1,7 @@
+.hashtag__link {
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @include font-style(21px, 26px, 700);
+}

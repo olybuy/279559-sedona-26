@@ -1,0 +1,14 @@
+.copyright__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.copyright__text {
+  margin-right: 5px;
+  text-transform: uppercase;
+
+  @include font-style(14px, 21px, 400);
+}

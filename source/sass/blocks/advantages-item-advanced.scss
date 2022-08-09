@@ -10,6 +10,16 @@
   }
 }
 
+.advantages-item-advanced:nth-child(2) {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media screen and (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
 .advantages-item-advanced__content-wrapper {
   display: flex;
   flex-direction: column;

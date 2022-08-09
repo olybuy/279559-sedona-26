@@ -10,14 +10,10 @@
   }
 }
 
-.advantages-item-advanced__content-wrapper--first {
-  padding: 71px 20px 40px 18px;
-}
-
 .advantages-item-advanced__content-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 24px 18px 24px 18px;
+  padding: 39px 16px 35px 16px;
   text-align: center;
   border-bottom: 1px solid #d6d6d6;
 
@@ -26,6 +22,10 @@
     align-items: center;
     border: 0;
   }
+}
+
+.advantages-item-advanced__content-wrapper--first {
+  padding: 71px 20px 40px 18px;
 }
 
 .advantages-item-advanced__title {

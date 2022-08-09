@@ -8,8 +8,7 @@
   color: $fontPrimaryColor;
 
   @media screen and (min-width: $tablet-width) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }

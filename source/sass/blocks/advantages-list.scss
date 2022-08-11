@@ -10,10 +10,6 @@
   }
 }
 
-.advantages-list__item:nth-child(1) {
-  grid-column: 1 / span 3;
-}
-
-.advantages-list__item:nth-child(2) {
+.advantages-list__item--advanced {
   grid-column: 1 / span 3;
 }

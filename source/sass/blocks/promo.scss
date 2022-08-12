@@ -3,26 +3,26 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $primaryColor;
-}
 
-.promo--size-s {
-  position: relative;
-  min-height: 158px;
-  text-align: center;
+  &--size-s {
+    position: relative;
+    min-height: 158px;
+    text-align: center;
+  }
+
+  &--size-s::after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 57px;
+    background-image: url("../../img/intro-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+  }
 }
 
 .promo__text--size-s {
   margin-top: 52px;
-}
-
-.promo--size-s::after {
-  position: absolute;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  height: 57px;
-  background-image: url("../../img/intro-triangle.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  content: "";
 }

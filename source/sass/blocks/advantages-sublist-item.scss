@@ -2,14 +2,14 @@
   margin: 0;
   padding: 15px 18px 15px 18px;
 
+  &::before {
+    @media screen and (min-width: $tablet-width) {
+      margin: 0 auto;
+    }
+  }
+
   @media screen and (min-width: $tablet-width) {
     text-align: center;
-  }
-}
-
-.advantages-sublist-item::before {
-  @media screen and (min-width: $tablet-width) {
-    margin: 0 auto;
   }
 }
 

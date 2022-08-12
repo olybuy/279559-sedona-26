@@ -22,18 +22,18 @@
   padding: 0;
   box-sizing: border-box;
 
+  &--opened {
+    z-index: 2;
+  }
+
+  &--closed {
+    display: none;
+  }
+
   @media screen and (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
   }
-}
-
-.main-nav__list--opened {
-  z-index: 2;
-}
-
-.main-nav__list--closed {
-  display: none;
 }
 
 .main-nav__item {

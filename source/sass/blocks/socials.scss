@@ -8,10 +8,10 @@
 
 .socials__item {
   margin-right: 6px;
-}
 
-.socials__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .socials__link {

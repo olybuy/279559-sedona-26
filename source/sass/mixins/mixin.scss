@@ -3,3 +3,13 @@
   line-height: $height;
   font-weight: $weight;
 }
+
+@mixin add-icon($width, $height, $url) {
+  display: block;
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: $width;
+  height: $height;
+  content: "";
+}

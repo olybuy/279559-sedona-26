@@ -22,7 +22,7 @@
   }
 
   &--search {
-    min-width: 284px;
+    max-width: 284px;
     padding: 16px;
 
     @include font-style(21px, 26px, 700);

@@ -9,6 +9,7 @@
     @media screen and (min-width: $tablet-width) {
       margin: 0 auto;
       position: static;
+      margin-bottom: 32px;
     }
   }
 
@@ -27,14 +28,29 @@
 
 .advantages-sublist-item:nth-child(1)::before {
   @include add-icon(39px, 37px, "../../img/icon-house.svg");
+
+  @media screen and (min-width: $tablet-width) {
+    width: 75px;
+    height: 72px;
+  }
 }
 
 .advantages-sublist-item:nth-child(2)::before {
   @include add-icon(40px, 35px, "../../img/icon-burger.svg");
+
+  @media screen and (min-width: $tablet-width) {
+    width: 76px;
+    height: 68px;
+  }
 }
 
 .advantages-sublist-item:nth-child(3)::before {
   @include add-icon(32px, 38px, "../../img/icon-gift.svg");
+
+  @media screen and (min-width: $tablet-width) {
+    width: 64px;
+    height: 75px;
+  }
 }
 
 .advantages-sublist-item__title {

@@ -3,6 +3,7 @@
   padding: 39px 20px 20px 20px;
   margin: 0 auto;
   text-align: center;
+  background: linear-gradient(180deg, #ffffff 65%, #f2f2f2 35%);
 }
 
 .modal-approve__title {
@@ -20,4 +21,8 @@
   text-transform: uppercase;
 
   @include font-style(14px, 21px, 400);
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 97px;
+  }
 }

@@ -20,4 +20,8 @@
   text-transform: uppercase;
 
   @include font-style(14px, 21px, 400);
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 49px;
+  }
 }

@@ -6,9 +6,23 @@
   padding: 0;
   box-sizing: border-box;
 
+  &::after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    height: 7px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    content: "";
+  }
+
   @media screen and (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -96,6 +110,17 @@
 
 .main-nav__item {
   text-align: center;
+  background-color: $primaryColor;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+    @media screen and (min-width: $tablet-width) {
+      border: none;
+      box-shadow: none;
+    }
+  }
 
   &:nth-child(4n+3) {
     @media screen and (min-width: $tablet-width) {
@@ -108,11 +133,9 @@
   display: block;
   padding-top: 17px;
   padding-bottom: 12px;
-  background-color: $primaryColor;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   @include font-style(18px, 26px, 700);
 

@@ -31,7 +31,7 @@
   }
 }
 
-.advantages-sublist-item:nth-child(1)::before {
+.advantages-sublist-item--home::before {
   @include add-icon(39px, 37px, "../../img/icon-house.svg");
 
   @media screen and (min-width: $tablet-width) {
@@ -40,7 +40,7 @@
   }
 }
 
-.advantages-sublist-item:nth-child(2)::before {
+.advantages-sublist-item--food::before {
   @include add-icon(40px, 35px, "../../img/icon-burger.svg");
 
   @media screen and (min-width: $tablet-width) {
@@ -49,7 +49,7 @@
   }
 }
 
-.advantages-sublist-item:nth-child(3)::before {
+.advantages-sublist-item--souvenirs::before {
   @include add-icon(32px, 38px, "../../img/icon-gift.svg");
 
   @media screen and (min-width: $tablet-width) {

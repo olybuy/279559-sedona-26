@@ -20,10 +20,6 @@
     padding: 22px 20px 15px 20px;
     background-color: $captionPrimaryColor;
     box-sizing: border-box;
-
-    &--dark-theme {
-      background-color: $captionSecondaryColor;
-    }
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -31,6 +27,12 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
     color: #ffffff;
+  }
+}
+
+.gallery-item:nth-child(2n+2) .gallery-item__caption {
+  @media screen and (min-width: $tablet-width) {
+    background-color: $captionSecondaryColor;
   }
 }
 
@@ -69,6 +71,8 @@
 .gallery-item__image {
   display: block;
   margin-bottom: 15px;
+  width: 100%;
+  object-fit: cover;
 
   @media screen and (min-width: $tablet-width) {
     width: 100%;

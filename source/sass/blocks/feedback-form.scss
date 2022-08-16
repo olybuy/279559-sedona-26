@@ -18,8 +18,20 @@
 }
 
 .feedback-form__group--wide {
+  padding-bottom: 34px;
+
   @media screen and (min-width: $tablet-width) {
     grid-column: 1 / span 2;
+
+    &:not(:first-of-type)::before {
+      position: absolute;
+      top: 35px;
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: #d8d8d8;
+      content: "";
+    }
   }
 }
 

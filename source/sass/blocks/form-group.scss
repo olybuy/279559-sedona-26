@@ -1,8 +1,7 @@
 .form-group {
+  position: relative;
   display: flex;
   flex-direction: column;
-  padding: 0;
-  padding-bottom: 34px;
   margin: 0;
   border: 0;
 
@@ -18,6 +17,10 @@
 
     &:nth-of-type(2) {
       padding-left: 44px;
+    }
+
+    &:not(:last-of-type) {
+      border-bottom: none;
     }
   }
 
@@ -40,6 +43,16 @@
   color: $fontSecondaryColor;
   text-align: center;
 
+  @media screen and (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    display: block;
+    width: fit-content;
+    padding: 24px 63px 0 63px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    z-index: 2;
+  }
+
   &--text-field {
     padding-bottom: 20px;
   }
@@ -57,10 +70,6 @@
   }
 
   @include font-style(18px, 26px, 700);
-
-  @media screen and (min-width: $tablet-width) {
-    grid-column: 1 / -1;
-  }
 }
 
 .form-group__field {

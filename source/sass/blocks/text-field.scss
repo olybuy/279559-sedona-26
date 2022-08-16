@@ -1,5 +1,9 @@
 .text-field:not(:last-child) {
   padding-bottom: 16px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .text-field__label {

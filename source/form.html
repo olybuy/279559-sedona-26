@@ -41,8 +41,8 @@
     </header>
 
     <main class="main-container">
-      <header class="promo promo--size-s">
-        <img class="promo__text promo__text--size-s" src="img/sedona_text.svg" alt="Welcome to the gorgeous Sedona!">
+      <header class="promo">
+        <img class="promo__text"  width="229" height="39" src="img/sedona_text.svg" alt="Welcome to the gorgeous Sedona!">
       </header>
       <section class="feedback">
         <div class="feedback__preview preview preview--form">
@@ -55,12 +55,12 @@
             <fieldset class="feedback-form__group form-group">
               <h2 class="form-group__title form-group__title--text-field">Представьтесь:</h2>
               <div class="form-group__label-wrapper">
-                <label class="form-group__field text-field">
+                <label class="form-group__field text-field form-group__field--textfield">
                   <span class="text-field__label">Имя*:</span>
                   <input class="text-field__input" type="text" name="name" placeholder="Пётр" required>
                 </label>
 
-                <label class="form-group__field text-field">
+                <label class="form-group__field text-field form-group__field--textfield">
                   <span class="text-field__label">Фамилия*:</span>
                   <input class="text-field__input" type="text" name="surname" placeholder="Пустота" required>
                 </label>
@@ -75,12 +75,12 @@
             <fieldset class="feedback-form__group form-group">
               <h2 class="form-group__title form-group__title--text-field">Контактная информация:</h2>
               <div class="form-group__label-wrapper">
-                <label class="form-group__field text-field text-field--phone">
+                <label class="form-group__field text-field form-group__field--textfield text-field--phone">
                   <span class="text-field__label">Контактный телефон*:</span>
                   <input class="text-field__input" type="text" name="phone" placeholder="Введите телефон" required>
                 </label>
 
-                <label class="form-group__field text-field text-field--email">
+                <label class="form-group__field text-field form-group__field--textfield text-field--email">
                   <span class="text-field__label">Электронная почта*:</span>
                   <input class="text-field__input" type="text" name="email" placeholder="Введите e-mail" required>
                 </label>
@@ -90,17 +90,17 @@
             <fieldset class="feedback-form__group form-group feedback-form__group--wide">
               <h2 class="form-group__title form-group__title--radio-field">Ваше общее впечатление:</h2>
               <div class="form-group__label-wrapper form-group__label-wrapper--wide">
-                <label class="form-group__field radio-field">
+                <label class="form-group__field radio-field form-group__field--radio">
                   <input class="radio-field__input radio-field__input--checked" type="radio" name="impression" value="good">
                   <span class="radio-field__label">Скорее положительное</span>
                 </label>
 
-                <label class="form-group__field radio-field">
+                <label class="form-group__field radio-field form-group__field--radio">
                   <input class="radio-field__input" type="radio" name="impression" value="bad">
                   <span class="radio-field__label">Скорее отрицательное</span>
                 </label>
 
-                <label class="form-group__field radio-field">
+                <label class="form-group__field radio-field form-group__field--radio">
                   <input class="radio-field__input" type="radio" name="impression" value="dont-know">
                   <span class="radio-field__label">Затрудняюсь ответить</span>
                 </label>
@@ -110,22 +110,22 @@
             <fieldset class="feedback-form__group form-group feedback-form__group--wide">
               <h2 class="form-group__title form-group__title--checkbox-field">Посещенные достопримечательности:</h2>
               <div class="form-group__label-wrapper form-group__label-wrapper--wide">
-                <label class="form-group__field checkbox-field">
+                <label class="form-group__field checkbox-field form-group__field--checkbox">
                   <input class="checkbox-field__input checkbox-field__input--checked" type="checkbox" name="devil-bridge">
                   <span class="checkbox-field__label">Мост Дьявола</span>
                 </label>
 
-                <label class="form-group__field checkbox-field">
+                <label class="form-group__field checkbox-field form-group__field--checkbox">
                   <input class="checkbox-field__input checkbox-field__input--checked" type="checkbox" name="mountain-bell">
                   <span class="checkbox-field__label">Гора-Колокол</span>
                 </label>
 
-                <label class="form-group__field checkbox-field">
+                <label class="form-group__field checkbox-field form-group__field--checkbox">
                   <input class="checkbox-field__input checkbox-field__input--checked" type="checkbox" name="slide-park">
                   <span class="checkbox-field__label">Слайд-парк</span>
                 </label>
 
-                <label class="form-group__field checkbox-field">
+                <label class="form-group__field checkbox-field form-group__field--checkbox">
                   <input class="checkbox-field__input" type="checkbox" name="red-rocks">
                   <span class="checkbox-field__label">Красные скалы</span>
                 </label>

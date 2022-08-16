@@ -5,7 +5,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $primaryColor;
-  text-align: center;
+
+  @media screen and (min-width: $tablet-width) {
+    min-height: 518px;
+  }
 
   &::after {
     position: absolute;
@@ -21,6 +24,13 @@
 }
 
 .main-promo__text {
+  display: block;
   margin: 0 auto;
   padding-top: 90px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding-top: 77px;
+    width: 461px;
+    height: 350px;
+  }
 }

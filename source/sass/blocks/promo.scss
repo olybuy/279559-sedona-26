@@ -3,14 +3,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $primaryColor;
+  position: relative;
+  min-height: 158px;
 
-  &--size-s {
-    position: relative;
-    min-height: 158px;
-    text-align: center;
-  }
-
-  &--size-s::after {
+  &::after {
     position: absolute;
     bottom: 0;
     display: block;
@@ -21,8 +17,24 @@
     background-position: center;
     content: "";
   }
+
+  @media screen and (min-width: $tablet-width) {
+    min-height: 290px;
+
+    &::after {
+      background-image: url("../../img/intro-triangle-big.svg");
+    }
+  }
 }
 
-.promo__text--size-s {
-  margin-top: 52px;
+.promo__text {
+  display: block;
+  margin: 0 auto;
+  padding-top: 52px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding-top: 95px;
+    width: 457px;
+    height: 78px;
+  }
 }

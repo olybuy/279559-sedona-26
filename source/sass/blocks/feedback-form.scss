@@ -14,12 +14,11 @@
   @media screen and (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    row-gap: 42px;
   }
 }
 
 .feedback-form__group--wide {
-  padding-bottom: 34px;
-
   @media screen and (min-width: $tablet-width) {
     grid-column: 1 / span 2;
 
@@ -35,6 +34,14 @@
   }
 }
 
+.feedback-form__button-wrapper {
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .feedback-form__note {
   display: block;
   padding-right: 20px;
@@ -45,13 +52,5 @@
 
   @media screen and (min-width: $tablet-width) {
     padding: 0;
-  }
-}
-
-.feedback-form__button-wrapper {
-  @media screen and (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 }

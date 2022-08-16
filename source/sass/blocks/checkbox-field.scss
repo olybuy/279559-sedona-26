@@ -1,5 +1,9 @@
 .checkbox-field:not(:last-child) {
   padding-bottom: 36px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .checkbox-field__label {

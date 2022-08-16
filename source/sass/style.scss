@@ -1,9 +1,11 @@
 // Начните писать стили здесь
 @import "variables/colors";
+@import "variables/variabales";
 @import "mixins/mixin";
 @import "blocks/page";
 @import "blocks/advantages-list";
-@import "blocks/advantages-item";
+@import "blocks/advantages-item-advanced";
+@import "blocks/advantages-item-base";
 @import "blocks/advantages-sublist";
 @import "blocks/advantages-sublist-item";
 @import "blocks/button";
@@ -13,6 +15,7 @@
 @import "blocks/feedback-form";
 @import "blocks/form-group";
 @import "blocks/fonts";
+@import "blocks/gallery";
 @import "blocks/gallery-item";
 @import "blocks/hashtag";
 @import "blocks/location";

@@ -6,4 +6,9 @@
   list-style-type: none;
   background-color: #ffffff;
   color: $fontPrimaryColor;
+
+  @media screen and (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

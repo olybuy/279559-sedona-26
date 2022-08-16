@@ -3,4 +3,13 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media screen and (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.advantages-list__item--advanced {
+  grid-column: 1 / span 3;
 }

@@ -5,12 +5,22 @@
 .text-field__label {
   display: block;
   text-transform: uppercase;
+
+  @include font-style(14px, 21px, 400);
 }
 
 .text-field__input {
   width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px;
+  color: $fontSecondaryColor;
   background-color: $inputColor;
   border-width: 0;
+  box-sizing: border-box;
+
+  @include font-style(18px, 26px, 700);
+}
+
+.text-field__input::placeholder {
+  color: $fontSecondaryColor;
+  opacity: 0.3;
 }

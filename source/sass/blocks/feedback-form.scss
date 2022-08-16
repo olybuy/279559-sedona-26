@@ -1,3 +1,28 @@
+.feedback-form {
+  padding: 0 20px 0 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 0 60px 0 60px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 0 120px 0 120px;
+  }
+}
+
+.feedback-form__wrapper {
+  @media screen and (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.feedback-form__group--wide {
+  @media screen and (min-width: $tablet-width) {
+    grid-column: 1 / span 2;
+  }
+}
+
 .feedback-form__note {
   display: block;
   padding-right: 20px;
@@ -5,4 +30,16 @@
   text-align: right;
 
   @include font-style(12px, 21px, 400);
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.feedback-form__button-wrapper {
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

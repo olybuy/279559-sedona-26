@@ -1,6 +1,16 @@
 .advantages-sublist-item {
   margin: 0;
   padding: 15px 18px 15px 18px;
+
+  @media screen and (min-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.advantages-sublist-item::before {
+  @media screen and (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
 }
 
 .advantages-sublist-item:nth-child(1)::before {
@@ -40,9 +50,15 @@
   text-transform: uppercase;
 
   @include font-style(18px, 26px, 700);
+
+  @media screen and (min-width: $tablet-width) {
+    @include font-style(21px, 26px, 700);
+  }
 }
 
 .advantages-sublist-item__description {
   margin: 0;
   text-transform: uppercase;
+
+  @include font-style(14px, 21px, 400);
 }

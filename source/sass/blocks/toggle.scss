@@ -4,4 +4,12 @@
   width: 23px;
   height: 23px;
   z-index: 3;
+
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    display: none;
+  }
 }

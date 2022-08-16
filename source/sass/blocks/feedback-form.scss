@@ -14,7 +14,40 @@
   @media screen and (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 42px;
+  }
+}
+
+.feedback-form__group {
+  border: 0;
+  border-bottom: 1px solid $borderColor;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    border-bottom: none;
+
+    &:nth-of-type(1) {
+      padding-right: 43px;
+      border-right: 1px solid #d8d8d8;
+    }
+
+    &:nth-of-type(2) {
+      padding-left: 44px;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-bottom: 0;
+
+    &:nth-of-type(1) {
+      padding-right: 63px;
+    }
+
+    &:nth-of-type(2) {
+      padding-left: 64px;
+    }
   }
 }
 
@@ -22,7 +55,7 @@
   @media screen and (min-width: $tablet-width) {
     grid-column: 1 / span 2;
 
-    &:not(:first-of-type)::before {
+    /*&:not(:first-of-type)::before {
       position: absolute;
       top: 35px;
       display: block;
@@ -30,13 +63,16 @@
       width: 100%;
       background-color: #d8d8d8;
       content: "";
-    }
+    }*/
   }
 }
 
 .feedback-form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+
   @media screen and (min-width: $tablet-width) {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
@@ -44,13 +80,8 @@
 
 .feedback-form__note {
   display: block;
-  padding-right: 20px;
   text-transform: uppercase;
-  text-align: right;
+  text-align: center;
 
   @include font-style(12px, 21px, 400);
-
-  @media screen and (min-width: $tablet-width) {
-    padding: 0;
-  }
 }

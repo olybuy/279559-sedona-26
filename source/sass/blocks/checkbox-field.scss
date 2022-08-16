@@ -1,13 +1,35 @@
-.checkbox-field:not(:last-child) {
-  padding-bottom: 36px;
-
-  @media screen and (min-width: $tablet-width) {
-    padding: 0;
-  }
+.checkbox-field {
+  position: relative;
+  display: block;
 }
 
 .checkbox-field__label {
   color: $fontSecondaryColor;
+  padding-left: 62px;
 
   @include font-style(18px, 26px, 700);
+}
+
+.checkbox-field__input {
+  display: none;
+}
+
+.checkbox-field__mark {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-color: $inputColor;
+  border-radius: 4px;
+  z-index: 1;
+  content: "";
+}
+
+.checkbox-field__input:checked + .checkbox-field__mark {
+  position: absolute;
+  background-image: url("../../img/tick.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
 }

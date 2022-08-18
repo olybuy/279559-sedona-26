@@ -26,7 +26,7 @@
     position: absolute;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
-    color: #ffffff;
+    color: $fontSecondaryColor;
   }
 }
 
@@ -49,7 +49,7 @@
 }
 
 .gallery-item__title {
-  color: $fontSecondaryColor;
+  color: $titleColor;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
@@ -57,7 +57,7 @@
   @include font-style(14px, 21px, 700);
 
   @media screen and (min-width: $desktop-width) {
-    color: #ffffff;
+    color: $fontSecondaryColor;
   }
 }
 

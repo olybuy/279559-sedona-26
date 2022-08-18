@@ -22,11 +22,11 @@
   background-color: $primaryColor;
 
   &:hover {
-    background-color: $hoverColor;
+    background-color: $buttonHoverColor;
   }
 
   &:active {
-    background-color: #5496bd;
+    background-color: $buttonActiveColor;
 
     .socials__icon {
       opacity: 0.3;

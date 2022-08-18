@@ -2,7 +2,7 @@
   height: 100%;
   font-family: "PT Sans", sans-serif;
   color: $fontPrimaryColor;
-  background-color: #f2f2f2;
+  background-color: $backgroundColor;
 
   @include font-style(14px, 21px, 400);
 }
@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  background-color: #ffffff;
+  background-color: $containerBackgroundColor;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 
   @media screen and (min-width: $tablet-width) {

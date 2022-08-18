@@ -12,7 +12,7 @@
 .text-field__input {
   width: 100%;
   padding: 12px;
-  color: $fontSecondaryColor;
+  color: $titleColor;
   background-color: $inputColor;
   border: 4px solid transparent;
   box-sizing: border-box;
@@ -22,8 +22,8 @@
   }
 
   &:active {
-    background-color: #ffffff;
-    border: 4px solid #e5e5e5;
+    background-color: $containerBackgroundColor;
+    border: 4px solid $borderColor;
   }
 
   &:focus-visible {
@@ -34,7 +34,7 @@
 }
 
 .text-field__input::placeholder {
-  color: $fontSecondaryColor;
+  color: $titleColor;
   opacity: 0.3;
 }
 

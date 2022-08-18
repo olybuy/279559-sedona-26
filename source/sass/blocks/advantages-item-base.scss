@@ -1,21 +1,29 @@
 .advantages-item-base {
-  padding: 0 18px 0 18px;
+  padding: 0 18px;
   background-color: $secondaryColor;
   box-sizing: border-box;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .advantages-item-base__content-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 24px 15px 24px 18px;
+  margin: 0 auto;
+  padding: 24px 18px;
   text-align: center;
   border-bottom: 1px solid #d6d6d6;
 
   @media screen and (min-width: $tablet-width) {
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     border: 0;
-    padding: 24px 20px;
+    padding: 42px 33px;
+    max-width: 228px;
     min-height: 256px;
     box-sizing: border-box;
   }
@@ -24,8 +32,7 @@
 .advantages-item-base__title {
   margin: 0;
   margin-bottom: 11px;
-  color: $fontSecondaryColor;
-  text-transform: uppercase;
+  color: $titleColor;
 
   @include font-style(18px, 26px, 700);
   @include add-number;
@@ -37,7 +44,6 @@
 
 .advantages-item-base__description {
   margin: 0;
-  text-transform: uppercase;
 
   @include font-style(14px, 21px, 400);
 }

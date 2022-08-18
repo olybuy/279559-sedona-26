@@ -14,7 +14,7 @@
   padding: 0;
   margin: 0;
   text-transform: uppercase;
-  color: $fontSecondaryColor;
+  color: $titleColor;
   text-align: center;
 
   @media screen and (min-width: $tablet-width) {
@@ -22,7 +22,7 @@
     width: fit-content;
     padding: 0 63px 0 63px;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: $containerBackgroundColor;
     z-index: 2;
   }
 

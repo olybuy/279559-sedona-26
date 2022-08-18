@@ -3,7 +3,7 @@
   margin: 0 auto;
   background-color: $primaryColor;
   border-width: 0;
-  color: #ffffff;
+  color: $fontSecondaryColor;
   font-family: "PT Sans", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -11,15 +11,16 @@
   box-sizing: border-box;
 
   &:hover {
-    background-color: $hoverColor;
+    background-color: $buttonHoverColor;
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba($fontSecondaryColor, 0.3);
+    background-color: $buttonActiveColor;
   }
 
   &:disabled {
-    background-color: #e5e5e5;
+    background-color: $hoverInput;
     cursor: auto;
   }
 

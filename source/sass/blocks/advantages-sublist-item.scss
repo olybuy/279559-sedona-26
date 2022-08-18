@@ -61,7 +61,7 @@
 .advantages-sublist-item__title {
   margin: 0;
   margin-bottom: 16px;
-  color: $fontSecondaryColor;
+  color: $titleColor;
   text-transform: uppercase;
 
   @include font-style(18px, 26px, 700);

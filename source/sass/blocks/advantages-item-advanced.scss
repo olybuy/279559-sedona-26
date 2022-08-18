@@ -1,6 +1,6 @@
 .advantages-item-advanced {
   background-color: $primaryColor;
-  color: #ffffff;
+  color: $fontSecondaryColor;
   text-transform: uppercase;
   border: 0;
   box-sizing: border-box;
@@ -52,12 +52,22 @@
     max-width: 320px;
     min-height: 211px;
   }
+
+  @media screen and (min-width: 321px) {
+    padding-top: 18px;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 32px;
+    max-width: 248px;
+    min-height: 236px;
+  }
 }
 
 .advantages-item-advanced__title {
   margin: 0;
   margin-bottom: 11px;
-  color: #ffffff;
+  color: $fontSecondaryColor;
 
   @include font-style(18px, 26px, 700);
   @include add-number;

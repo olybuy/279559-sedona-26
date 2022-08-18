@@ -129,10 +129,10 @@
   }
 
   &:active {
-    background-color: #5496bd;
+    background-color: $buttonActiveColor;
 
     .main-nav__link {
-      color: rgba(255, 255, 255, 0.3);
+      color: rgba($fontSecondaryColor, 0.3);
     }
   }
 
@@ -147,15 +147,15 @@
   display: block;
   padding-top: 18px;
   padding-bottom: 17px;
-  color: #ffffff;
+  color: $fontSecondaryColor;
   text-decoration: none;
   text-transform: uppercase;
 
   @include font-style(18px, 26px, 700);
 
   @media screen and (min-width: $tablet-width) {
-    color: $fontSecondaryColor;
-    background-color: #ffffff;
+    color: $titleColor;
+    background-color: $containerBackgroundColor;
     box-shadow: none;
 
     @include font-style(14px, 21px, 700);
@@ -165,13 +165,13 @@
     }
 
     &:active {
-      color: rgba(0, 0, 0, 0.3);
+      color: rgba($titleColor, 0.3);
     }
   }
 }
 
 .main-nav__link--active {
   @media screen and (min-width: $tablet-width) {
-    color: #766357;
+    color: $activeLink;
   }
 }

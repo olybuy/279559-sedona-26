@@ -13,6 +13,10 @@
 
     @media screen and (min-width: $tablet-width) {
       padding: 48px 50px 57px 50px;
+
+      .preview__title {
+        @include font-style(21px, 26px, 700);
+      }
     }
   }
 
@@ -64,10 +68,14 @@
 .preview__title {
   margin: 0;
   margin-bottom: 35px;
-  color: $fontSecondaryColor;
+  color: $titleColor;
   text-transform: uppercase;
 
   @include font-style(18px, 26px, 700);
+
+  @media screen and (min-width: $desktop-width) {
+    @include font-style(30px, 26px, 700);
+  }
 }
 
 .preview__description {

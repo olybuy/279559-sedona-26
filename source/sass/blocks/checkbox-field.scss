@@ -2,18 +2,20 @@
   position: relative;
   display: block;
 
-  &:hover .checkbox-field__mark {
-    background-color: $hoverInput;
+  &:hover {
+    .checkbox-field__mark {
+      background-color: $hoverInput;
+    }
   }
 
   &:active {
     .checkbox-field__mark {
       background-color: #d5d5d5;
     }
-  }
 
-  &:active .checkbox-field__mark::after {
-    opacity: 0.3;
+    .checkbox-field__mark::after {
+      opacity: 0.3;
+    }
   }
 }
 

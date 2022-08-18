@@ -2,6 +2,7 @@
   margin: 0 auto;
   text-align: center;
   border-bottom: 1px solid $borderColor;
+  text-transform: uppercase;
 
   @media screen and (min-width: $tablet-width) {
     border: none;
@@ -23,6 +24,10 @@
   &--search {
     max-width: 435px;
     padding: 38px 18px 49px 18px;
+
+    @media screen and (min-width: $tablet-width) {
+      padding: 61px 18px 58px 18px;
+    }
   }
 
   &--gallery {
@@ -69,18 +74,16 @@
   margin: 0;
   margin-bottom: 35px;
   color: $titleColor;
-  text-transform: uppercase;
 
   @include font-style(18px, 26px, 700);
 
-  @media screen and (min-width: $desktop-width) {
+  @media screen and (min-width: $tablet-width) {
     @include font-style(30px, 26px, 700);
   }
 }
 
 .preview__description {
   margin: 0;
-  text-transform: uppercase;
 
   @include font-style(14px, 21px, 400);
 }

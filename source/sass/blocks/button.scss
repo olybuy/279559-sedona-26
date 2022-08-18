@@ -10,6 +10,8 @@
   cursor: pointer;
   box-sizing: border-box;
 
+  @include font-style(21px, 26px, 700);
+
   &:hover {
     background-color: $buttonHoverColor;
   }
@@ -28,8 +30,6 @@
     min-width: 281px;
     padding: 18px 14px 14px 14px;
 
-    @include font-style(21px, 26px, 700);
-
     @media screen and (min-width: $tablet-width) {
       margin: 0;
     }
@@ -38,8 +38,6 @@
   &--search {
     max-width: 284px;
     padding: 16px;
-
-    @include font-style(21px, 26px, 700);
   }
 
   &--modal-approve {
@@ -47,6 +45,10 @@
     padding: 18px 14px 14px 14px;
 
     @include font-style(18px, 26px, 700);
+
+    @media screen and (min-width: $tablet-width) {
+      @include font-style(21px, 26px, 700);
+    }
   }
 
   &--modal-error {
@@ -54,5 +56,9 @@
     padding: 18px 14px 14px 14px;
 
     @include font-style(18px, 26px, 700);
+
+    @media screen and (min-width: $tablet-width) {
+      @include font-style(21px, 26px, 700);
+    }
   }
 }

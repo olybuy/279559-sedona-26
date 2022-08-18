@@ -1,5 +1,5 @@
 .promo {
-  background-image: url("../../img/jpg/back-desktop.jpg");
+  background-image: url("/img/jpg/back-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $primaryColor;
@@ -12,7 +12,7 @@
     display: block;
     width: 100%;
     height: 57px;
-    background-image: url("../../img/intro-triangle.svg");
+    background-image: url("/img/intro-triangle.svg");
     background-repeat: no-repeat;
     background-position: center;
     content: "";
@@ -22,7 +22,7 @@
     min-height: 290px;
 
     &::after {
-      background-image: url("../../img/intro-triangle-big.svg");
+      background-image: url("/img/intro-triangle-big.svg");
     }
   }
 }

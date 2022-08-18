@@ -26,7 +26,7 @@
 }
 
 .text-field--phone {
-  @include input-icon("/img/phone.svg");
+  @include input-icon("../img/phone.svg");
 
   .text-field__input {
     padding-right: 78px;
@@ -34,7 +34,7 @@
 }
 
 .text-field--email {
-  @include input-icon("/img/mail.svg");
+  @include input-icon("../img/mail.svg");
 
   .text-field__input {
     padding-right: 78px;

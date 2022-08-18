@@ -10,6 +10,19 @@
   cursor: pointer;
   box-sizing: border-box;
 
+  &:hover {
+    background-color: $hoverColor;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    cursor: auto;
+  }
+
   &--feedback {
     min-width: 281px;
     padding: 18px 14px 14px 14px;

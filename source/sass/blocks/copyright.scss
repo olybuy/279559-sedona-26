@@ -4,6 +4,14 @@
   align-items: center;
   text-decoration: none;
   color: #000000;
+
+  &:hover {
+    color: $primaryColor;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }
 
 .copyright__text {

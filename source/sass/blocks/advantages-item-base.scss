@@ -28,6 +28,7 @@
   text-transform: uppercase;
 
   @include font-style(18px, 26px, 700);
+  @include add-number;
 
   @media screen and (min-width: $tablet-width) {
     @include font-style(21px, 26px, 700);

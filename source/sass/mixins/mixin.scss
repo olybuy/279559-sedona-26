@@ -14,3 +14,15 @@
   height: $height;
   content: "";
 }
+
+@mixin add-number {
+  &::after {
+    margin-top: 20px;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    counter-increment: advantages;
+    content: "– №" counter(advantages) " –";
+  }
+}

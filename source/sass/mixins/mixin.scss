@@ -26,3 +26,22 @@
     content: "– №" counter(advantages) " –";
   }
 }
+
+@mixin input-icon($url) {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 58px;
+    height: 58px;
+    display: block;
+    background-color: #e6e6e6;
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+    z-index: 2;
+  }
+}

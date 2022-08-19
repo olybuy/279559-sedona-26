@@ -27,11 +27,12 @@
   }
 
   &--feedback {
-    min-width: 281px;
+    max-width: 281px;
     padding: 18px 14px 14px 14px;
+    margin: 0;
 
     @media screen and (min-width: $tablet-width) {
-      margin: 0;
+      min-width: 324px;
     }
   }
 

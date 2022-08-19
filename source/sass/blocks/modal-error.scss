@@ -1,8 +1,10 @@
 .modal-error {
   max-width: 400px;
   padding: 45px 42px 35px 41px;
-  margin: 0 auto;
+  margin: auto;
   text-align: center;
+  background-color: $containerBackgroundColor;
+  box-sizing: border-box;
 }
 
 .modal-error__title {

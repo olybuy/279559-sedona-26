@@ -3,12 +3,18 @@
 }
 
 .textarea-field__input {
+  display: block;
   padding: 16px;
   width: 100%;
   font-family: "PT Sans", sans-serif;
   background-color: $inputColor;
   border: 0;
   box-sizing: border-box;
+
+  @media screen and (min-width: $desktop-width) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
 }
 
 .textarea-field__input::placeholder {

@@ -3,7 +3,7 @@
   padding: 24px 20px 25px 20px;
   margin: 0;
   box-sizing: border-box;
-  border-bottom: 1px solid $borderColor;
+  border-bottom: 1px solid $mobileBorderColor;
 
   @media screen and (min-width: $tablet-width) {
     border: none;

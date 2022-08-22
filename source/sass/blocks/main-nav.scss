@@ -1,84 +1,154 @@
-.main-nav {
-  position: relative;
-  box-sizing: border-box;
-  z-index: 2;
-
-  @media screen and (min-width: $tablet-width) {
-    width: $tablet-width;
-    margin: 0 auto;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    width: $desktop-width;
-    margin: 0 auto;
-  }
-}
-
 .main-nav__list {
-  display: block;
+  position: absolute;
   width: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+
+  @include list-reset;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    height: 7px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    content: "";
+  }
 
   @media screen and (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+
+    &::after {
+      display: none;
+    }
   }
 }
 
-.main-nav__list--opened {
-  z-index: 2;
+.main-nav--closed .main-nav__list {
+  display: none;
+
+  @media screen and (min-width: $tablet-width) {
+    display: grid;
+  }
 }
 
-.main-nav__list--closed {
-  display: none;
+.main-nav--opened .main-nav__list {
+  z-index: 3;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 16px;
+  display: block;
+  width: 23px;
+  height: 23px;
+  border: 0;
+  background-color: transparent;
+  z-index: 4;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 23px;
+    height: 4px;
+    background-color: $primaryColor;
+    box-shadow: 0 9px 0 0 $primaryColor, 0 18px 0 0 $primaryColor;
+    content: "";
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 4px;
+    width: 23px;
+    background-color: #ffffff;
+    content: "";
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 .main-nav__item {
   text-align: center;
-}
+  background-color: $primaryColor;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
-.main-nav__item:nth-child(1) {
-  @media screen and (min-width: $tablet-width) {
-    grid-column: 1 / 2;
+  &:last-child {
+    border: none;
+    box-shadow: none;
   }
-}
 
-.main-nav__item:nth-child(2) {
-  @media screen and (min-width: $tablet-width) {
-    grid-column: 2 / 3;
+  &:nth-child(4n+3) {
+    @media screen and (min-width: $tablet-width) {
+      grid-column: 4 / 5;
+    }
   }
-}
 
-.main-nav__item:nth-child(3) {
   @media screen and (min-width: $tablet-width) {
-    grid-column: 4 / 5;
-  }
-}
-
-.main-nav__item:nth-child(4) {
-  @media screen and (min-width: $tablet-width) {
-    grid-column: 5 / 6;
+    border: none;
+    box-shadow: none;
   }
 }
 
 .main-nav__link {
   display: block;
-  padding-top: 17px;
-  padding-bottom: 12px;
-  background-color: $primaryColor;
-  color: #ffffff;
+  padding-top: 18px;
+  padding-bottom: 17px;
+  color: $fontSecondaryColor;
   text-decoration: none;
   text-transform: uppercase;
-  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   @include font-style(18px, 26px, 700);
 
+  &:hover {
+    background-color: $buttonHoverColor;
+
+    @media screen and (min-width: $tablet-width) {
+      color: $primaryColor;
+      background-color: $containerBackgroundColor;
+    }
+  }
+
+  &:active {
+    background-color: $buttonActiveColor;
+
+    .main-nav__link {
+      color: rgba($fontSecondaryColor, 0.3);
+    }
+
+    @media screen and (min-width: $tablet-width) {
+      background-color: $containerBackgroundColor;
+      color: rgba($titleColor, 0.3);
+    }
+  }
+
   @media screen and (min-width: $tablet-width) {
-    color: $fontSecondaryColor;
-    background-color: #ffffff;
+    color: $titleColor;
+    background-color: $containerBackgroundColor;
     box-shadow: none;
 
     @include font-style(14px, 21px, 700);
@@ -87,6 +157,27 @@
 
 .main-nav__link--active {
   @media screen and (min-width: $tablet-width) {
-    color: #766357;
+    color: $activeLink;
+
+    &:hover,
+    &:active {
+      color: $activeLink;
+    }
+  }
+}
+
+.main-nav--nojs {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    position: relative;
+    display: block;
+    z-index: 4;
+
+    @media screen and (min-width: $tablet-width) {
+      display: grid;
+    }
   }
 }

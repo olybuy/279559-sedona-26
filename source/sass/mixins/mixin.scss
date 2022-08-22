@@ -3,3 +3,51 @@
   line-height: $height;
   font-weight: $weight;
 }
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin add-icon($width, $height, $url) {
+  display: block;
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: $width;
+  height: $height;
+  content: "";
+}
+
+@mixin add-number {
+  &::after {
+    margin-top: 11px;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    counter-increment: advantages;
+    content: "– №" counter(advantages) " –";
+  }
+}
+
+@mixin input-icon($url) {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 58px;
+    height: 58px;
+    display: block;
+    background-color: #e6e6e6;
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+    z-index: 2;
+  }
+}

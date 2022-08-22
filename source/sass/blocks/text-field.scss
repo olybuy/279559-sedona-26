@@ -1,5 +1,5 @@
-.text-field:not(:last-child) {
-  padding-bottom: 16px;
+.text-field {
+  display: block;
 }
 
 .text-field__label {
@@ -11,16 +11,46 @@
 
 .text-field__input {
   width: 100%;
-  padding: 16px;
-  color: $fontSecondaryColor;
+  padding: 12px;
+  margin: 0;
+  color: $titleColor;
   background-color: $inputColor;
-  border-width: 0;
+  border: 4px solid transparent;
   box-sizing: border-box;
+
+  &:hover {
+    background-color: $hoverInput;
+  }
+
+  &:active {
+    background-color: $containerBackgroundColor;
+    border: 4px solid $mobileBorderColor;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
 
   @include font-style(18px, 26px, 700);
 }
 
 .text-field__input::placeholder {
-  color: $fontSecondaryColor;
+  color: $titleColor;
   opacity: 0.3;
+}
+
+.text-field--phone {
+  @include input-icon("../img/phone.svg");
+
+  .text-field__input {
+    padding-right: 78px;
+  }
+}
+
+.text-field--email {
+  @include input-icon("../img/mail.svg");
+
+  .text-field__input {
+    padding-right: 78px;
+  }
 }

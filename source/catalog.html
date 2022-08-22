@@ -8,11 +8,11 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list main-nav__list--opened">
+        <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">
               Главная
@@ -41,8 +41,8 @@
     </header>
 
     <main class="main-container">
-      <header class="promo promo--size-s">
-        <img class="promo__text promo__text--size-s" src="img/sedona_text.svg" alt="Welcome to the gorgeous Sedona!">
+      <header class="promo">
+        <img class="promo__text" width="229" height="39" src="img/sedona_text.svg" alt="Welcome to the gorgeous Sedona!">
       </header>
       <section class="gallery">
         <div class="gallery__preview preview preview--gallery">
@@ -82,7 +82,7 @@
 
         <figure class="gallery__item gallery-item">
           <img class="gallery-item__image" src="img/jpg/photo-3-mobile.jpg" width="280" height="280" alt="Широкое шоссе, уходящее в закат.">
-          <figcaption class="gallery-item__caption gallery-item__caption--dark-theme">
+          <figcaption class="gallery-item__caption">
             <div class="gallery-item__caption-copyright">
               <p class="gallery-item__title">Дорога на север</p>
               <p class="gallery-item__author">Автор фото: Петр</p>
@@ -156,9 +156,11 @@
         <a class="copyright__link" href="#">
           <span class="copyright__text">Разработано</span>
           <span class="visually-hidden">в HTML Academy</span>
-          <svg class="copyright__logo" width="27" height="35" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" fill="#000"/></svg>
+          <svg class="copyright__logo" width="27" height="35" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/></svg>
         </a>
       </div>
     </footer>
+
+    <script src="js/menu.js"></script>
   </body>
 </html>

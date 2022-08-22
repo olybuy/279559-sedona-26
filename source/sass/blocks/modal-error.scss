@@ -1,12 +1,16 @@
 .modal-error {
+  max-width: 400px;
   padding: 45px 42px 35px 41px;
+  margin: auto;
   text-align: center;
+  background-color: $containerBackgroundColor;
+  box-sizing: border-box;
 }
 
 .modal-error__title {
   margin: 0;
   margin-bottom: 36px;
-  color: $fontSecondaryColor;
+  color: $titleColor;
   text-transform: uppercase;
 
   @include font-style(21px, 26px, 700);
@@ -18,4 +22,8 @@
   text-transform: uppercase;
 
   @include font-style(14px, 21px, 400);
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 49px;
+  }
 }

@@ -1,82 +1,182 @@
 .form-group {
+  position: relative;
   display: flex;
   flex-direction: column;
-  padding: 0;
-  padding-bottom: 34px;
   margin: 0;
-  border: 0;
-
-  &:not(:last-of-type) {
-    border-bottom: 1px solid $borderColor;
-  }
+  padding: 24px 0 34px 0;
 
   @media screen and (min-width: $tablet-width) {
-    &:first-of-type {
-      padding-right: 43px;
-      border-right: 1px solid #d8d8d8;
-    }
-
-    &:nth-of-type(2) {
-      padding-left: 44px;
-    }
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    &:first-of-type {
-      padding-right: 63px;
-    }
-
-    &:nth-of-type(2) {
-      padding-left: 64px;
-    }
+    padding: 0;
   }
 }
 
 .form-group__title {
   padding: 0;
-  padding-top: 24px;
   margin: 0;
   text-transform: uppercase;
-  color: $fontSecondaryColor;
+  color: $titleColor;
   text-align: center;
 
-  &--text-field {
-    padding-bottom: 20px;
-  }
-
-  &--radio-field {
-    padding-bottom: 30px;
-  }
-
-  &--checkbox-field {
-    padding-bottom: 30px;
-  }
-
-  &--textarea-field {
-    padding-bottom: 20px;
+  @media screen and (min-width: $tablet-width) {
+    display: block;
+    width: fit-content;
+    padding: 0 63px 0 63px;
+    margin: 0 auto;
+    background-color: $containerBackgroundColor;
+    z-index: 2;
   }
 
   @include font-style(18px, 26px, 700);
-
-  @media screen and (min-width: $tablet-width) {
-    grid-column: 1 / -1;
-  }
-}
-
-.form-group__field {
-  display: block;
-  box-sizing: border-box;
-}
-
-.form-group__field--textarea-field {
-  @media screen and (min-width: $tablet-width) {
-    grid-column: 1 / -1;
-  }
 }
 
 .form-group__label-wrapper--wide {
   @media screen and (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+.form-group--text-field {
+  .form-group__title {
+    margin-bottom: 20px;
+  }
+
+  .form-group__field {
+    margin-bottom: 16px;
+  }
+
+  .form-group__field:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 47px;
+
+    .form-group__title {
+      margin-bottom: 28px;
+    }
+
+    .form-group__field:last-child {
+      margin-bottom: 16px;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
+}
+
+.form-group--radio-field {
+  .form-group__title {
+    margin-bottom: 30px;
+  }
+
+  .form-group__field {
+    margin-bottom: 36px;
+  }
+
+  .form-group__field:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 58px;
+
+    .form-group__title {
+      margin-bottom: 38px;
+    }
+
+    .form-group__label-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .form-group__label-wrapper--wide {
+      padding-left: 36px;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 83px;
+
+    .form-group__title {
+      margin-bottom: 55px;
+    }
+
+    .form-group__label-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .form-group__label-wrapper--wide {
+      padding-left: 53px;
+    }
+
+    .form-group__field:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.form-group--checkbox-field {
+  .form-group__title {
+    margin-bottom: 30px;
+  }
+
+  .form-group__field {
+    margin-bottom: 36px;
+  }
+
+  .form-group__field:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 52px;
+
+    .form-group__title {
+      margin-bottom: 38px;
+    }
+
+    .form-group__label-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .form-group__label-wrapper--wide {
+      padding-left: 84px;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 97px;
+
+    .form-group__title {
+      margin-bottom: 69px;
+    }
+
+    .form-group__label-wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .form-group__label-wrapper--wide {
+      padding-left: 45px;
+    }
+  }
+}
+
+.form-group--textarea-field {
+  .form-group__title {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 48px;
+
+    .form-group__title {
+      margin-bottom: 28px;
+    }
   }
 }

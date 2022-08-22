@@ -1,5 +1,4 @@
 .main-search {
-  padding: 38px 18px 49px 18px;
   text-align: center;
 }
 
@@ -9,8 +8,12 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color: $fontSecondaryColor;
+  color: $titleColor;
   text-transform: uppercase;
+
+  @media screen and (min-width: $tablet-width) {
+    @include font-style(30px, 26px, 700);
+  }
 }
 
 .main-search__description {

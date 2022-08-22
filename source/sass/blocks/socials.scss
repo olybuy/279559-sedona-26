@@ -1,17 +1,16 @@
 .socials__list {
   display: flex;
   justify-content: center;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
+
+  @include list-reset;
 }
 
 .socials__item {
   margin-right: 6px;
-}
 
-.socials__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .socials__link {
@@ -20,6 +19,18 @@
   width: 48px;
   height: 48px;
   background-color: $primaryColor;
+
+  &:hover {
+    background-color: $buttonHoverColor;
+  }
+
+  &:active {
+    background-color: $buttonActiveColor;
+
+    .socials__icon {
+      opacity: 0.3;
+    }
+  }
 }
 
 .socials__icon {

@@ -8,11 +8,11 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list main-nav__list--opened">
+        <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--active">
               Главная
@@ -59,17 +59,23 @@
             </div>
             <img class="advantages-item-advanced__photo" src="img/jpg/photo-city@1x-1.jpg" width="320" height="260" alt="Улица с зеленым домом и американскими флажками.">
             <ul class="advantages-item-advanced__sublist advantages-sublist">
-              <li class="advantages-sublist__item advantages-sublist-item">
-                <h4 class="advantages-sublist-item__title">Жилье</h4>
-                <p class="advantages-sublist-item__description"> Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <li class="advantages-sublist__item advantages-sublist-item advantages-sublist-item--home">
+                <div class="advantages-sublist-item__wrapper">
+                  <h4 class="advantages-sublist-item__title">Жилье</h4>
+                  <p class="advantages-sublist-item__description"> Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </div>
               </li>
-              <li class="advantages-sublist__item advantages-sublist-item">
-                <h4 class="advantages-sublist-item__title">Еда</h4>
-                <p class="advantages-sublist-item__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+              <li class="advantages-sublist__item advantages-sublist-item advantages-sublist-item--food">
+                <div class="advantages-sublist-item__wrapper">
+                  <h4 class="advantages-sublist-item__title">Еда</h4>
+                  <p class="advantages-sublist-item__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+                </div>
               </li>
-              <li class="advantages-sublist__item advantages-sublist-item">
-                <h4 class="advantages-sublist-item__title">Сувениры</h4>
-                <p class="advantages-sublist-item__description">Не только китайского, но и местного производства!</p>
+              <li class="advantages-sublist__item advantages-sublist-item advantages-sublist-item--souvenirs">
+                <div class="advantages-sublist-item__wrapper">
+                  <h4 class="advantages-sublist-item__title">Сувениры</h4>
+                  <p class="advantages-sublist-item__description">Не только китайского, но и местного производства!</p>
+                </div>
               </li>
             </ul>
           </li>
@@ -101,14 +107,21 @@
           </li>
         </ol>
       </section>
-      <section class="main-search">
+      <section class="main-search preview preview--search">
         <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
         <p class="main-search__title">Заинтересовались?</p>
         <p class="main-search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
         <a class="main-search__button button button--search" href="#">Найти гостинницу</a>
       </section>
       <div class="location">
-        <img class="location__image" src="img/jpg/map-mobile.jpg" width="320" height="350" alt="Фрагмент карты, на которой отмечено расположение Седоны.">
+        <iframe class="location__image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.17731020665!2d-111.79513845!3d34.8543784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2s!4v1660807200210!5m2!1sru!2s"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </main>
 
@@ -145,9 +158,11 @@
         <a class="copyright__link" href="#">
           <span class="copyright__text">Разработано</span>
           <span class="visually-hidden">в HTML Academy</span>
-          <svg class="copyright__logo" width="27" height="35" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" fill="#000"/></svg>
+          <svg class="copyright__logo" width="27" height="35" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/></svg>
         </a>
       </div>
     </footer>
+
+    <script src="js/menu.js"></script>
   </body>
 </html>

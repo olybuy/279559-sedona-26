@@ -8,11 +8,11 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list main-nav__list--opened">
+        <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">
               Главная
@@ -41,8 +41,8 @@
     </header>
 
     <main class="main-container">
-      <header class="promo promo--size-s">
-        <img class="promo__text promo__text--size-s" src="img/sedona_text.svg" alt="Welcome to the gorgeous Sedona!">
+      <header class="promo">
+        <img class="promo__text"  width="229" height="39" src="img/sedona_text.svg" alt="Welcome to the gorgeous Sedona!">
       </header>
       <section class="feedback">
         <div class="feedback__preview preview preview--form">
@@ -52,8 +52,8 @@
 
         <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="feedback-form__wrapper">
-            <fieldset class="feedback-form__group form-group">
-              <h2 class="form-group__title form-group__title--text-field">Представьтесь:</h2>
+            <fieldset class="feedback-form__group form-group form-group--text-field">
+              <h2 class="form-group__title">Представьтесь:</h2>
               <div class="form-group__label-wrapper">
                 <label class="form-group__field text-field">
                   <span class="text-field__label">Имя*:</span>
@@ -72,8 +72,8 @@
               </div>
             </fieldset>
 
-            <fieldset class="feedback-form__group form-group">
-              <h2 class="form-group__title form-group__title--text-field">Контактная информация:</h2>
+            <fieldset class="feedback-form__group form-group form-group--text-field">
+              <h2 class="form-group__title">Контактная информация:</h2>
               <div class="form-group__label-wrapper">
                 <label class="form-group__field text-field text-field--phone">
                   <span class="text-field__label">Контактный телефон*:</span>
@@ -87,55 +87,62 @@
               </div>
             </fieldset>
 
-            <fieldset class="feedback-form__group form-group feedback-form__group--wide">
-              <h2 class="form-group__title form-group__title--radio-field">Ваше общее впечатление:</h2>
+            <fieldset class="feedback-form__group form-group feedback-form__group--wide form-group--radio-field">
+              <h2 class="form-group__title">Ваше общее впечатление:</h2>
               <div class="form-group__label-wrapper form-group__label-wrapper--wide">
                 <label class="form-group__field radio-field">
-                  <input class="radio-field__input radio-field__input--checked" type="radio" name="impression" value="good">
+                  <input class="radio-field__input" type="radio" name="impression" value="good" checked>
+                  <span class="radio-field__mark"></span>
                   <span class="radio-field__label">Скорее положительное</span>
                 </label>
 
                 <label class="form-group__field radio-field">
                   <input class="radio-field__input" type="radio" name="impression" value="bad">
+                  <span class="radio-field__mark"></span>
                   <span class="radio-field__label">Скорее отрицательное</span>
                 </label>
 
                 <label class="form-group__field radio-field">
                   <input class="radio-field__input" type="radio" name="impression" value="dont-know">
+                  <span class="radio-field__mark"></span>
                   <span class="radio-field__label">Затрудняюсь ответить</span>
                 </label>
               </div>
             </fieldset>
 
-            <fieldset class="feedback-form__group form-group feedback-form__group--wide">
-              <h2 class="form-group__title form-group__title--checkbox-field">Посещенные достопримечательности:</h2>
+            <fieldset class="feedback-form__group form-group feedback-form__group--wide form-group--checkbox-field">
+              <h2 class="form-group__title">Посещенные достопримечательности:</h2>
               <div class="form-group__label-wrapper form-group__label-wrapper--wide">
                 <label class="form-group__field checkbox-field">
-                  <input class="checkbox-field__input checkbox-field__input--checked" type="checkbox" name="devil-bridge">
+                  <input class="checkbox-field__input" type="checkbox" name="devil-bridge" checked>
+                  <span class="checkbox-field__mark"></span>
                   <span class="checkbox-field__label">Мост Дьявола</span>
                 </label>
 
                 <label class="form-group__field checkbox-field">
-                  <input class="checkbox-field__input checkbox-field__input--checked" type="checkbox" name="mountain-bell">
+                  <input class="checkbox-field__input" type="checkbox" name="mountain-bell" checked>
+                  <span class="checkbox-field__mark"></span>
                   <span class="checkbox-field__label">Гора-Колокол</span>
                 </label>
 
                 <label class="form-group__field checkbox-field">
-                  <input class="checkbox-field__input checkbox-field__input--checked" type="checkbox" name="slide-park">
+                  <input class="checkbox-field__input" type="checkbox" name="slide-park" checked>
+                  <span class="checkbox-field__mark"></span>
                   <span class="checkbox-field__label">Слайд-парк</span>
                 </label>
 
                 <label class="form-group__field checkbox-field">
                   <input class="checkbox-field__input" type="checkbox" name="red-rocks">
+                  <span class="checkbox-field__mark"></span>
                   <span class="checkbox-field__label">Красные скалы</span>
                 </label>
               </div>
             </fieldset>
 
-            <fieldset class="feedback-form__group form-group feedback-form__group--wide">
-              <h2 class="form-group__title form-group__title--textarea-field">Опишите свои эмоции:</h2>
+            <fieldset class="feedback-form__group form-group feedback-form__group--wide form-group--textarea-field">
+              <h2 class="form-group__title">Опишите свои эмоции:</h2>
               <div class="form-group__label-wrapper">
-                <label class="form-group__field textarea-field form-group__field--textarea-field">
+                <label class="form-group__field textarea-field">
                   <textarea class="textarea-field__input" rows="10" name="feedback-description" placeholder="Опишите подробно все свои восторги "></textarea>
                 </label>
               </div>
@@ -183,12 +190,12 @@
         <a class="copyright__link" href="#">
           <span class="copyright__text">Разработано</span>
           <span class="visually-hidden">в HTML Academy</span>
-          <svg class="copyright__logo" width="27" height="35" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" fill="#000"/></svg>
+          <svg class="copyright__logo" width="27" height="35" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/></svg>
         </a>
       </div>
     </footer>
 
-    <div class="modal-container">
+    <div class="modal-container modal-container--closed">
       <div class="modal-error">
         <h2 class="modal-error__title">Что-то пошло не так!</h2>
         <p class="modal-error__error-message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
@@ -196,12 +203,16 @@
       </div>
     </div>
 
-    <div class="modal-container">
+    <div class="modal-container modal-container--closed">
       <div class="modal-approve">
         <h2 class="modal-approve__title">Ваш отзыв отправлен!</h2>
         <p class="modal-approve__approve-message">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="modal-approve__button button button--modal-approve" type="button">Закрыть окно</button>
+        <div class="modal-approve__wrapper">
+          <button class="modal-approve__button button button--modal-approve" type="button">Закрыть окно</button>
+        </div>
       </div>
     </div>
+
+    <script src="js/menu.js"></script>
   </body>
 </html>

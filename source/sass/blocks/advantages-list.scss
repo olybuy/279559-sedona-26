@@ -1,8 +1,8 @@
 .advantages-list {
   position: relative;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
+  counter-reset: advantages;
+
+  @include list-reset;
 
   @media screen and (min-width: $tablet-width) {
     display: grid;

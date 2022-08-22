@@ -3,42 +3,63 @@
   margin: 0 auto;
   background-color: $primaryColor;
   border-width: 0;
-  color: #ffffff;
+  color: $fontSecondaryColor;
   font-family: "PT Sans", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
   box-sizing: border-box;
-}
-
-.button--feedback {
-  min-width: 281px;
-  padding: 18px 14px 14px 14px;
 
   @include font-style(21px, 26px, 700);
 
-  @media screen and (min-width: $tablet-width) {
-    margin: 0;
+  &:hover {
+    background-color: $buttonHoverColor;
   }
-}
 
-.button--search {
-  min-width: 284px;
-  padding: 16px;
+  &:active {
+    color: rgba($fontSecondaryColor, 0.3);
+    background-color: $buttonActiveColor;
+  }
 
-  @include font-style(21px, 26px, 700);
-}
+  &:disabled {
+    background-color: $hoverInput;
+    cursor: auto;
+  }
 
-.button--modal-approve {
-  min-width: 280px;
-  padding: 18px 14px 14px 14px;
+  &--feedback {
+    max-width: 281px;
+    padding: 18px 14px 14px 14px;
+    margin: 0;
 
-  @include font-style(18px, 26px, 700);
-}
+    @media screen and (min-width: $tablet-width) {
+      min-width: 324px;
+    }
+  }
 
-.button--modal-error {
-  min-width: 180px;
-  padding: 18px 14px 14px 14px;
+  &--search {
+    max-width: 284px;
+    padding: 16px;
+  }
 
-  @include font-style(18px, 26px, 700);
+  &--modal-approve {
+    min-width: 280px;
+    padding: 18px 14px 14px 14px;
+
+    @include font-style(18px, 26px, 700);
+
+    @media screen and (min-width: $tablet-width) {
+      @include font-style(21px, 26px, 700);
+    }
+  }
+
+  &--modal-error {
+    min-width: 180px;
+    padding: 18px 14px 14px 14px;
+
+    @include font-style(18px, 26px, 700);
+
+    @media screen and (min-width: $tablet-width) {
+      @include font-style(21px, 26px, 700);
+    }
+  }
 }

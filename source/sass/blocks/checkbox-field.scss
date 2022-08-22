@@ -27,7 +27,7 @@
 }
 
 .checkbox-field__input {
-  display: none;
+  appearance: none;
 }
 
 .checkbox-field__mark {
@@ -53,4 +53,8 @@
   background-position: center;
   background-repeat: no-repeat;
   content: "";
+}
+
+.checkbox-field__input:focus + .checkbox-field__mark {
+  background-color: #d5d5d5;
 }

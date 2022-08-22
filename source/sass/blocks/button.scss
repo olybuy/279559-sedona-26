@@ -21,6 +21,10 @@
     background-color: $buttonActiveColor;
   }
 
+  &:focus {
+    outline: 4px solid $buttonHoverColor;
+  }
+
   &:disabled {
     background-color: $hoverInput;
     cursor: auto;

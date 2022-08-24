@@ -98,6 +98,11 @@
   background-image: url("../img/like-icon-dark.svg");
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
 
   @media screen and (min-width: $desktop-width) {
     background-image: url("../img/like-icon-light.svg");

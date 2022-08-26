@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -41,9 +43,9 @@
     </header>
 
     <main class="main-container">
-      <header class="main-promo">
+      <header class="promo promo--main">
         <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-        <img class="main-promo__text" src="img/text-index.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona: because the Grand Canyon sucks!">
+        <img class="promo__text promo__text--main" src="img/text-index.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona: because the Grand Canyon sucks!">
       </header>
       <section class="advantages">
         <div class="advantages__preview preview preview--main">
@@ -57,21 +59,25 @@
               <h3 class="advantages-item-advanced__title">Настоящий городок</h3>
               <p class="advantages-item-advanced__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <img class="advantages-item-advanced__photo" src="img/jpg/photo-city@1x-1.jpg" width="320" height="260" alt="Улица с зеленым домом и американскими флажками.">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/jpg/photo-city-desktop.jpg 1x, img/jpg/photo-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 320px)" srcset="img/jpg/photo-city-tablet.jpg 1x, img/jpg/photo-city-tablet@2x.jpg 2x">
+              <img class="advantages-item-advanced__photo" src="img/jpg/photo-city-mobile.jpg" width="320" height="260" alt="Улица с зеленым домом и американскими флажками.">
+            </picture>
             <ul class="advantages-item-advanced__sublist advantages-sublist">
-              <li class="advantages-sublist__item advantages-sublist-item advantages-sublist-item--home">
+              <li class="advantages-sublist__item advantages-sublist-item icon icon--home">
                 <div class="advantages-sublist-item__wrapper">
                   <h4 class="advantages-sublist-item__title">Жилье</h4>
                   <p class="advantages-sublist-item__description"> Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </div>
               </li>
-              <li class="advantages-sublist__item advantages-sublist-item advantages-sublist-item--food">
+              <li class="advantages-sublist__item advantages-sublist-item icon icon--food">
                 <div class="advantages-sublist-item__wrapper">
                   <h4 class="advantages-sublist-item__title">Еда</h4>
                   <p class="advantages-sublist-item__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
                 </div>
               </li>
-              <li class="advantages-sublist__item advantages-sublist-item advantages-sublist-item--souvenirs">
+              <li class="advantages-sublist__item advantages-sublist-item icon icon--souvenirs">
                 <div class="advantages-sublist-item__wrapper">
                   <h4 class="advantages-sublist-item__title">Сувениры</h4>
                   <p class="advantages-sublist-item__description">Не только китайского, но и местного производства!</p>
@@ -80,7 +86,11 @@
             </ul>
           </li>
           <li class="advantages-list__item advantages-item-advanced advantages-list__item--advanced advantages-item-advanced--reverse">
-            <img class="advantages-item-advanced__photo" src="img/jpg/photo-bridge@1x-1.jpg" width="320" height="260" alt="Узкая скала в каньоне, похожая на мост.">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/jpg/photo-bridge-desktop.jpg 1x, img/jpg/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 320px)" srcset="img/jpg/photo-bridge-tablet.jpg, img/jpg/photo-bridge-desktop@2x.jpg 2x">
+              <img class="advantages-item-advanced__photo" src="img/jpg/photo-bridge-mobile.jpg" width="320" height="260" alt="Узкая скала в каньоне, похожая на мост.">
+            </picture>
             <div class="advantages-item-advanced__content-wrapper">
               <h3 class="advantages-item-advanced__title">Там есть Мост дьявола</h3>
               <p class="advantages-item-advanced__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>

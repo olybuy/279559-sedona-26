@@ -2,9 +2,11 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона. Фото и видео</title>
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -42,7 +44,7 @@
 
     <main class="main-container">
       <header class="promo">
-        <img class="promo__text" width="229" height="39" src="img/sedona_text.svg" alt="Welcome to the gorgeous Sedona!">
+        <img class="promo__text" width="229" height="39" src="img/text-sedona.svg" alt="Welcome to the gorgeous Sedona!">
       </header>
       <section class="gallery">
         <div class="gallery__preview preview preview--gallery">
@@ -51,7 +53,11 @@
         </div>
 
         <figure class="gallery__item gallery-item">
-          <img class="gallery-item__image" src="img/jpg/photo-1-mobile.jpg" width="280" height="280" alt="Широкое шоссе, уходящее в закат.">
+          <picture>
+            <source media="(min-width:768px)" srcset="img/jpg/photo-1-desktop.jpg 1x, img/jpg/photo-1-desktop@2x.jpg 2x">
+            <source media="(min-width:321px)" srcset="img/jpg/photo-1-tablet.jpg 1x, img/jpg/photo-1-tablet@2x.jpg 2x">
+            <img class="gallery-item__image" src="img/jpg/photo-1-mobile.jpg" srcset="img/jpg/photo-1-mobile.jpg 1x, img/jpg/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Широкое шоссе, уходящее в закат.">
+          </picture>
           <figcaption class="gallery-item__caption">
             <div class="gallery-item__caption-copyright">
               <p class="gallery-item__title">Неродные просторы</p>
@@ -133,8 +139,8 @@
           <p class="preview__title">Все еще сомневаетесь?</p>
           <p class="preview__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
-        <div class="video-content__item video-item"> <!-- блоков с видео-роликом и описанием к нему может быть несколько -->
-          <img class="video-item__video" src="img/jpg/video-mobile.jpg" width="280" height="177" alt="Видео о Седоне.">
+        <div class="video-content__item video-item">
+
         </div>
       </section>
     </main>

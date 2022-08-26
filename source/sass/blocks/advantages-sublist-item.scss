@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 15px 18px 15px 18px;
+  padding-left: 18px;
+  padding-right: 18px;
 
   &::before {
     position: absolute;
@@ -17,12 +18,12 @@
 
   @media screen and (min-width: $tablet-width) {
     gap: 27px;
-    justify-content: flex-end;
     text-align: center;
-    padding: 15px 36px;
+    padding: 15px 16px;
   }
 
   @media screen and (min-width: $desktop-width) {
+    justify-content: flex-end;
     padding: 15px 58px;
   }
 }
@@ -37,6 +38,7 @@
 
 .advantages-sublist-item__title {
   margin: 0;
+  margin-top: 6px;
   margin-bottom: 16px;
   color: $titleColor;
   text-transform: uppercase;
@@ -44,7 +46,7 @@
   @include font-style(18px, 26px, 700);
 
   @media screen and (min-width: $tablet-width) {
-    margin-bottom: 23px;
+    margin: 0 0 23px 0;
 
     @include font-style(21px, 26px, 700);
   }
@@ -52,7 +54,16 @@
 
 .advantages-sublist-item__description {
   margin: 0;
+  margin-bottom: 24px;
   text-transform: uppercase;
 
   @include font-style(14px, 21px, 400);
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.advantages-sublist-item:last-child .advantages-sublist-item__description {
+  margin-bottom: 0;
 }

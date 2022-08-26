@@ -20,7 +20,7 @@
       }
     }
 
-    @media screen and (min-width: $tablet-width) {
+    @media screen and (min-width: $desktop-width) {
       padding: 59px 50px 44px 50px;
     }
   }
@@ -68,12 +68,14 @@
 
 .preview__title {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 35px;
   color: $titleColor;
 
   @include font-style(18px, 26px, 700);
 
   @media screen and (min-width: $tablet-width) {
+    margin-bottom: 28px;
+
     @include font-style(30px, 26px, 700);
   }
 }

@@ -22,23 +22,36 @@
     justify-content: flex-start;
     align-items: center;
     border: 0;
-    padding: 42px 33px;
+    padding: 42px 23px;
     max-width: 228px;
     min-height: 256px;
     box-sizing: border-box;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    max-width: 350px;
+    padding: 42px 33px;
   }
 }
 
 .advantages-item-base__title {
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 18px;
   color: $titleColor;
 
   @include font-style(18px, 26px, 700);
   @include add-number;
 
   @media screen and (min-width: $tablet-width) {
+    margin-bottom: 22px;
+    max-width: 155px;
+
     @include font-style(21px, 26px, 700);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 25px;
+    max-width: 155px;
   }
 }
 

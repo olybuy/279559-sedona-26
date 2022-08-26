@@ -41,8 +41,11 @@
   }
 
   &--search {
-    max-width: 284px;
     padding: 16px;
+
+    @media screen and (min-width: $tablet-width) {
+      padding: 14px 16px 17px 16px;
+    }
   }
 
   &--modal-approve {

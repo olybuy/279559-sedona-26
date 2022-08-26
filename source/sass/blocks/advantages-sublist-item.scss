@@ -1,5 +1,7 @@
 .advantages-sublist-item {
   position: relative;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 15px 18px 15px 18px;
 
@@ -7,13 +9,15 @@
     position: absolute;
 
     @media screen and (min-width: $tablet-width) {
+      align-self: flex-end;
       margin: 0 auto;
       position: static;
-      margin-bottom: 32px;
     }
   }
 
   @media screen and (min-width: $tablet-width) {
+    gap: 27px;
+    justify-content: flex-end;
     text-align: center;
     padding: 15px 36px;
   }
@@ -40,6 +44,8 @@
   @include font-style(18px, 26px, 700);
 
   @media screen and (min-width: $tablet-width) {
+    margin-bottom: 23px;
+
     @include font-style(21px, 26px, 700);
   }
 }

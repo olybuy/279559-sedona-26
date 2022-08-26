@@ -1,5 +1,17 @@
 .main-search {
+  max-width: 435px;
+  padding: 38px 18px 49px 18px;
+  margin: 0 auto;
   text-align: center;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 61px 18px 58px 18px;
+    max-width: 458px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 61px 18px 66px 18px;
+  }
 }
 
 .main-search__title {
@@ -22,4 +34,16 @@
   text-transform: uppercase;
 
   @include font-style(14px, 21px, 400);
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.main-search__button {
+  max-width: 284px;
+
+  @media screen and (min-width: $tablet-width) {
+    min-width: 458px;
+  }
 }

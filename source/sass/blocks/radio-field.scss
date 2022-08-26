@@ -27,7 +27,7 @@
 }
 
 .radio-field__input {
-  display: none;
+  appearance: none;
 }
 
 .radio-field__mark {
@@ -52,4 +52,8 @@
   transform: translateX(-50%) translateY(-50%);
   background-color: $fontPrimaryColor;
   content: "";
+}
+
+.radio-field__input:focus + .radio-field__mark {
+  background-color: #d5d5d5;
 }

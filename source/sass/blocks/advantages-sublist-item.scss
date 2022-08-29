@@ -31,6 +31,43 @@
 .advantages-sublist-item__wrapper {
   padding-left: 47px;
 
+  &--home {
+    @media screen and (min-width: $tablet-width) {
+      margin: 0 auto;
+      width: 170px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      width: 100%;
+    }
+  }
+
+  &--food {
+    margin-left: 5px;
+
+    @media screen and (min-width: $tablet-width) {
+      margin: 0 auto;
+      width: 170px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      width: 100%;
+    }
+  }
+
+  &--souvenirs {
+    padding-left: 45px;
+
+    @media screen and (min-width: $tablet-width) {
+      margin: 0 auto;
+      width: 195px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      width: 100%;
+    }
+  }
+
   @media screen and (min-width: $tablet-width) {
     padding: 0;
   }
@@ -44,6 +81,10 @@
   text-transform: uppercase;
 
   @include font-style(18px, 26px, 700);
+
+  &--souvenirs {
+    margin-bottom: 14px;
+  }
 
   @media screen and (min-width: $tablet-width) {
     margin: 0 0 23px 0;
@@ -61,6 +102,12 @@
 
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    .br {
+      display: block;
+    }
   }
 }
 

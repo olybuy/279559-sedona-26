@@ -20,6 +20,14 @@
     gap: 27px;
     text-align: center;
     padding: 15px 16px;
+
+    &--home {
+      padding-top: 19px;
+    }
+
+    &--food {
+      padding-top: 20px;
+    }
   }
 
   @media screen and (min-width: $desktop-width) {

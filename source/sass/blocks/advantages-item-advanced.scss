@@ -90,8 +90,8 @@
       margin-bottom: 23px;
     }
 
-    .br {
-      display: block;
+    &--bridge {
+      @include break;
     }
   }
 

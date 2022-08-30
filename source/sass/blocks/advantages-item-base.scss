@@ -31,10 +31,6 @@
   @media screen and (min-width: $desktop-width) {
     max-width: 350px;
     padding: 42px 33px;
-
-    .br {
-      display: block;
-    }
   }
 }
 
@@ -69,14 +65,18 @@
       white-space: nowrap;
     }
 
-    .br {
-      display: block;
+    &--few {
+      @include break;
+    }
+
+    &--road {
+      @include break;
     }
   }
 
   @media screen and (min-width: $desktop-width) {
-    .br {
-      display: inline;
+    &--few {
+      @include inline;
     }
   }
 }

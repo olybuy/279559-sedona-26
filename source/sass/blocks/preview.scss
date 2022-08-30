@@ -73,8 +73,8 @@
 
   @include font-style(18px, 26px, 700);
 
-  .br {
-    display: block;
+  &--main {
+    @include break;
   }
 
   @media screen and (min-width: $tablet-width) {
@@ -82,8 +82,8 @@
 
     @include font-style(30px, 26px, 700);
 
-    .br {
-      display: inline;
+    &--main {
+      @include inline;
     }
   }
 }

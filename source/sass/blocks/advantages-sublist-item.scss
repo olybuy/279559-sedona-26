@@ -110,11 +110,19 @@
 
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 0;
+
+    &--food {
+      @include break;
+    }
   }
 
   @media screen and (min-width: $desktop-width) {
-    .br {
-      display: block;
+    &--food {
+      @include inline;
+    }
+
+    &--souvenirs {
+      @include break;
     }
   }
 }

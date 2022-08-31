@@ -25,6 +25,7 @@
   @media screen and (min-width: $desktop-width) {
     position: absolute;
     bottom: 0;
+    padding: 22px 20px 15px 20px;
     background-color: rgba(0, 0, 0, 0.3);
     color: $fontSecondaryColor;
   }
@@ -41,7 +42,7 @@
 }
 
 .gallery-item__caption-copyright {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 
   @media screen and (min-width: $tablet-width) {
     margin: 0;
@@ -70,6 +71,8 @@
 
 .gallery-item__likes {
   font-weight: 700;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
 .gallery-item__image {
@@ -79,8 +82,15 @@
   object-fit: cover;
 
   @media screen and (min-width: $tablet-width) {
+    height: 267px;
     width: 100%;
     margin: 0;
+  }
+
+  &--wide {
+    @media screen and (min-width: $tablet-width) {
+      height: 400px;
+    }
   }
 }
 
@@ -98,6 +108,10 @@
   background-color: transparent;
   opacity: 0.3;
   cursor: pointer;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-right: 4px;
+  }
 
   @media screen and (min-width: $desktop-width) {
     color: $fontSecondaryColor;

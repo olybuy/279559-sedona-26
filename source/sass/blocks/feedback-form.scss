@@ -16,6 +16,11 @@
   @media screen and (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 48px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    grid-template-columns: 493px 1fr;
   }
 }
 

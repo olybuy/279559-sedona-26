@@ -38,6 +38,10 @@
     @media screen and (min-width: $tablet-width) {
       min-width: 324px;
     }
+
+    @media screen and (min-width: $desktop-width) {
+      min-width: 384px;
+    }
   }
 
   &--search {

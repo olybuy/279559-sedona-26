@@ -34,7 +34,7 @@
       margin-bottom: 47px;
 
       .form-group__title {
-        margin-bottom: 28px;
+        margin-bottom: 26px;
       }
 
       .form-group__field:last-child {
@@ -43,7 +43,7 @@
     }
 
     @media screen and (min-width: $desktop-width) {
-      margin-bottom: 55px;
+      margin-bottom: 57px;
     }
   }
 
@@ -74,11 +74,12 @@
 
       .form-group__label-wrapper--wide {
         padding-left: 36px;
+        padding-right: 20px;
       }
     }
 
     @media screen and (min-width: $desktop-width) {
-      margin-bottom: 83px;
+      margin-bottom: 48px;
 
       .form-group__title {
         margin-bottom: 55px;
@@ -126,11 +127,12 @@
 
       .form-group__label-wrapper--wide {
         padding-left: 84px;
+        padding-right: 54px;
       }
     }
 
     @media screen and (min-width: $desktop-width) {
-      margin-bottom: 97px;
+      margin-bottom: 62px;
 
       .form-group__title {
         margin-bottom: 69px;
@@ -153,8 +155,6 @@
     }
 
     @media screen and (min-width: $tablet-width) {
-      margin-bottom: 48px;
-
       .form-group__title {
         margin-bottom: 28px;
       }
@@ -187,11 +187,23 @@
   }
 
   &--left {
-    margin-right: 40px;
+    @media screen and (min-width: $tablet-width) {
+      margin-right: 40px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      margin-right: 102px;
+    }
   }
 
   &--right {
-    margin-left: -20px;
+    @media screen and (min-width: $tablet-width) {
+      margin-left: -20px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      margin-left: 30px;
+    }
   }
 }
 

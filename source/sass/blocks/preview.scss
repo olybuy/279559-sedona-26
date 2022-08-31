@@ -119,19 +119,19 @@
     @include break;
 
     @media screen and (min-width: $tablet-width) {
-      margin-bottom: 30px;
+      margin-bottom: 28px;
 
       @include inline;
     }
   }
 
   &--search {
-    margin-bottom: 22px;
+    margin-bottom: 19px;
 
     @include font-style(21px, 26px, 700);
 
     @media screen and (min-width: $tablet-width) {
-      margin-bottom: 30px;
+      margin-bottom: 32px;
 
       @include font-style(30px, 26px, 700);
     }
@@ -166,6 +166,14 @@
   margin: 0;
 
   @include font-style(14px, 21px, 400);
+
+  &--main {
+    margin-left: 2px;
+
+    @media screen and (min-width: $desktop-width) {
+      margin-left: 2px;
+    }
+  }
 
   &--gallery {
     @media screen and (min-width: $tablet-width) {

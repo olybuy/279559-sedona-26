@@ -4,6 +4,7 @@
 
 .text-field__label {
   display: block;
+  margin-left: 16px;
   text-transform: uppercase;
 
   @include font-style(14px, 21px, 400);

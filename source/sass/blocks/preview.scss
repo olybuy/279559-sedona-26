@@ -1,19 +1,23 @@
 .preview {
   margin: 0 auto;
+  max-width: 280px;
   text-align: center;
   border-bottom: 1px solid $mobileBorderColor;
   text-transform: uppercase;
+  box-sizing: content-box;
 
   @media screen and (min-width: $tablet-width) {
+    max-width: 435px;
     border: none;
   }
 
   &--main {
-    max-width: 490px;
     padding: 34px 20px 16px 17px;
+    max-width: 282px;
 
     @media screen and (min-width: $tablet-width) {
-      padding: 48px 50px 57px 50px;
+      padding: 48px 50px 57px;
+      max-width: 520px;
 
       .preview__title {
         @include font-style(21px, 26px, 700);
@@ -21,61 +25,81 @@
     }
 
     @media screen and (min-width: $desktop-width) {
-      padding: 59px 50px 44px 50px;
+      padding: 59px 50px 44px;
+      max-width: 484px;
+    }
+  }
+
+  &--search {
+    margin-bottom: 32px;
+    max-width: 261px;
+
+    @media screen and (min-width: $tablet-width) {
+      margin-bottom: 41px;
+      max-width: 435px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      margin-bottom: 46px;
+      max-width: 435px;
     }
   }
 
   &--gallery {
-    max-width: 458px;
-    padding: 38px 20px 37px 20px;
+    padding: 38px 20px 37px;
+    max-width: 280px;
 
     @media screen and (min-width: $tablet-width) {
-      padding: 66px 50px 80px 50px;
+      padding: 66px 50px 80px;
+      max-width: 435px;
     }
 
     @media screen and (min-width: $desktop-width) {
-      padding: 100px 50px 90px 50px;
+      padding: 100px 50px 90px;
+      max-width: 434px;
     }
   }
 
   &--video {
-    max-width: 445px;
-    padding: 17px 20px 38px 20px;
+    padding: 17px 20px 38px;
+    max-width: 266px;
     border: none;
 
     @media screen and (min-width: $tablet-width) {
-      padding: 60px 50px 90px 50px;
+      padding: 60px 50px 90px;
+      max-width: 445px;
     }
 
     @media screen and (min-width: $desktop-width) {
-      padding: 62px 50px 90px 50px;
+      padding: 62px 50px 90px;
+      max-width: 445px;
     }
   }
 
   &--form {
-    max-width: 434px;
-    padding: 36px 20px 28px 20px;
+    padding: 36px 20px 28px;
+    max-width: 280px;
 
     @media screen and (min-width: $tablet-width) {
-      padding: 64px 50px 102px 50px;
+      padding: 64px 50px 110px;
+      max-width: 440px;
     }
 
     @media screen and (min-width: $desktop-width) {
-      padding: 115px 50px 67px 50px;
+      padding: 115px 50px 67px;
+      max-width: 440px;
     }
   }
 }
 
 .preview__title {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   color: $titleColor;
 
   @include font-style(18px, 26px, 700);
 
   @media screen and (min-width: $tablet-width) {
-    margin-bottom: 32px;
-
     @include font-style(30px, 26px, 700);
   }
 
@@ -85,17 +109,41 @@
     @include break;
 
     @media screen and (min-width: $tablet-width) {
-      margin-bottom: 28px;
+      margin-bottom: 30px;
 
       @include inline;
     }
   }
 
-  &--video {
-    margin-bottom: 26px;
+  &--search {
+    margin-bottom: 22px;
 
     @media screen and (min-width: $tablet-width) {
-      margin-bottom: 32px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &--gallery {
+    margin-bottom: 22px;
+
+    @media screen and (min-width: $tablet-width) {
+      margin-bottom: 29px;
+    }
+  }
+
+  &--video {
+    margin-bottom: 30px;
+  }
+
+  &--form {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      margin-bottom: 29px;
     }
   }
 }
@@ -106,6 +154,12 @@
   @include font-style(14px, 21px, 400);
 
   &--gallery {
+    @media screen and (min-width: $tablet-width) {
+      @include break;
+    }
+  }
+
+  &--form {
     @media screen and (min-width: $tablet-width) {
       @include break;
     }

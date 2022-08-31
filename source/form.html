@@ -48,14 +48,14 @@
       </header>
       <section class="feedback">
         <div class="feedback__preview preview preview--form">
-          <h1 class="preview__title">Оставьте свой отзыв</h1>
-          <p class="preview__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <h1 class="preview__title preview__title--form">Оставьте свой отзыв</h1>
+          <p class="preview__description preview__description--form"><span class="br">Помогите нашим отелям стать лучше! Оставьте отзыв о них,</span> а также о посещенных вами достопримечательностях</p>
         </div>
 
         <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="feedback-form__wrapper">
             <fieldset class="feedback-form__group form-group form-group--text-field">
-              <h2 class="form-group__title">Представьтесь:</h2>
+              <h2 class="form-group__title form-group__title--text-field form-group__title--left">Представьтесь:</h2>
               <div class="form-group__label-wrapper">
                 <label class="form-group__field text-field">
                   <span class="text-field__label">Имя*:</span>
@@ -75,7 +75,7 @@
             </fieldset>
 
             <fieldset class="feedback-form__group form-group form-group--text-field">
-              <h2 class="form-group__title">Контактная информация:</h2>
+              <h2 class="form-group__title form-group__title--text-field form-group__title--right">Контактная информация:</h2>
               <div class="form-group__label-wrapper">
                 <label class="form-group__field text-field text-field--phone">
                   <span class="text-field__label">Контактный телефон*:</span>
@@ -112,8 +112,8 @@
               </div>
             </fieldset>
 
-            <fieldset class="feedback-form__group form-group feedback-form__group--wide form-group--checkbox-field">
-              <h2 class="form-group__title">Посещенные достопримечательности:</h2>
+            <fieldset class="feedback-form__group form-group feedback-form__group--wide feedback-form__group--high form-group--checkbox-field">
+              <h2 class="form-group__title">Посещенные<br/> достопримечательности:</h2>
               <div class="form-group__label-wrapper form-group__label-wrapper--wide">
                 <label class="form-group__field checkbox-field">
                   <input class="checkbox-field__input" type="checkbox" name="devil-bridge" checked>
@@ -145,7 +145,7 @@
               <h2 class="form-group__title">Опишите свои эмоции:</h2>
               <div class="form-group__label-wrapper">
                 <label class="form-group__field textarea-field">
-                  <textarea class="textarea-field__input" rows="10" name="feedback-description" placeholder="Опишите подробно все свои восторги "></textarea>
+                  <textarea class="textarea-field__input" rows="6" name="feedback-description" placeholder="Опишите подробно все свои восторги "></textarea>
                 </label>
               </div>
             </fieldset>

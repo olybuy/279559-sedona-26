@@ -32,19 +32,12 @@
 
 .main-search__description {
   margin: 0;
-  margin-bottom: 32px;
   text-transform: uppercase;
 
   @include font-style(14px, 21px, 400);
 
   @media screen and (min-width: $tablet-width) {
-    margin-bottom: 45px;
-
     @include break;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    margin-bottom: 48px;
   }
 }
 

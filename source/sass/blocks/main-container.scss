@@ -1,3 +1,15 @@
 .main-container {
   flex-grow: 1;
 }
+
+.main-container__search {
+  margin-bottom: 49px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
+}

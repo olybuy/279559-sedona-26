@@ -1,23 +1,25 @@
 .preview {
+  padding: 20px;
   margin: 0 auto;
-  max-width: 280px;
   text-align: center;
   border-bottom: 1px solid $mobileBorderColor;
   text-transform: uppercase;
-  box-sizing: content-box;
+  box-sizing: border-box;
 
   @media screen and (min-width: $tablet-width) {
-    max-width: 435px;
     border: none;
   }
 
   &--main {
     padding: 34px 20px 16px 17px;
     max-width: 282px;
+    box-sizing: content-box;
 
     @media screen and (min-width: $tablet-width) {
-      padding: 48px 50px 57px;
-      max-width: 520px;
+      padding-top: 48px;
+      max-width: 540px;
+      min-height: 206px;
+      box-sizing: border-box;
 
       .preview__title {
         @include font-style(21px, 26px, 700);
@@ -25,71 +27,76 @@
     }
 
     @media screen and (min-width: $desktop-width) {
-      padding: 59px 50px 44px;
-      max-width: 484px;
+      padding-top: 59px;
     }
   }
 
   &--search {
-    margin-bottom: 32px;
-    max-width: 261px;
+    padding: 40px 18px 20px;
+    max-width: 320px;
+    min-height: 180px;
+    border: 0;
 
     @media screen and (min-width: $tablet-width) {
-      margin-bottom: 41px;
-      max-width: 435px;
+      padding-top: 57px;
+      max-width: 480px;
+      min-height: 202px;
     }
 
     @media screen and (min-width: $desktop-width) {
-      margin-bottom: 46px;
-      max-width: 435px;
+      padding-top: 61px;
+      min-height: 207px;
     }
   }
 
   &--gallery {
-    padding: 38px 20px 37px;
-    max-width: 280px;
+    padding-top: 38px;
+    max-width: 320px;
+    min-height: 188px;
 
     @media screen and (min-width: $tablet-width) {
-      padding: 66px 50px 80px;
-      max-width: 435px;
+      padding-top: 66px;
+      max-width: 470px;
+      min-height: 247px;
     }
 
     @media screen and (min-width: $desktop-width) {
-      padding: 100px 50px 90px;
-      max-width: 434px;
+      padding-top: 100px;
+      min-height: 287px;
     }
   }
 
   &--video {
-    padding: 17px 20px 38px;
-    max-width: 266px;
+    padding-top: 17px;
+    max-width: 320px;
+    min-height: 173px;
     border: none;
 
     @media screen and (min-width: $tablet-width) {
-      padding: 60px 50px 90px;
-      max-width: 445px;
+      padding-top: 60px;
+      max-width: 490px;
+      min-height: 245px;
     }
 
     @media screen and (min-width: $desktop-width) {
-      padding: 62px 50px 90px;
-      max-width: 445px;
+      padding-top: 62px;
+      min-height: 247px;
     }
   }
 
   &--form {
-    padding: 36px 20px 28px;
-    max-width: 280px;
+    padding-top: 36px;
+    max-width: 320px;
+    min-height: 200px;
 
     @media screen and (min-width: $tablet-width) {
-      padding: 64px 10px 20px;
-      max-width: 460px;
+      padding-top: 64px;
+      max-width: 480px;
       min-height: 260px;
-      box-sizing: border-box;
     }
 
     @media screen and (min-width: $desktop-width) {
-      padding: 115px 10px 20px;
-      max-width: 460px;
+      padding-top: 115px;
       min-height: 282px;
     }
   }
@@ -121,8 +128,12 @@
   &--search {
     margin-bottom: 22px;
 
+    @include font-style(21px, 26px, 700);
+
     @media screen and (min-width: $tablet-width) {
       margin-bottom: 30px;
+
+      @include font-style(30px, 26px, 700);
     }
   }
 
@@ -170,6 +181,12 @@
 
     @media screen and (min-width: $desktop-width) {
       @include font-style(14px, 21px, 400);
+    }
+  }
+
+  &--search {
+    @media screen and (min-width: $tablet-width) {
+      @include break;
     }
   }
 }

@@ -46,9 +46,14 @@
 
   &--search {
     padding: 16px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
 
     @media screen and (min-width: $tablet-width) {
-      padding: 14px 16px 17px 16px;
+      margin: 0 auto;
+      padding: 14px 16px 17px;
+      max-width: 458px;
     }
   }
 

@@ -79,7 +79,7 @@
     }
 
     @media screen and (min-width: $desktop-width) {
-      padding-top: 62px;
+      padding-top: 60px;
       min-height: 247px;
     }
   }
@@ -147,6 +147,10 @@
 
   &--video {
     margin-bottom: 30px;
+
+    @media screen and (min-width: $desktop-width) {
+      margin-bottom: 32px;
+    }
   }
 
   &--form {

@@ -2,11 +2,11 @@
   padding: 0 20px;
 
   @media screen and (min-width: $tablet-width) {
-    padding: 0 60px 40px 60px;
+    padding: 0 60px;
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding: 0 120px 84px 120px;
+    padding: 0 120px;
   }
 }
 
@@ -39,5 +39,9 @@
 
   @media screen and (min-width: $tablet-width) {
     min-height: 500px;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 84px;
   }
 }

@@ -61,19 +61,19 @@
     }
 
     @media screen and (min-width: $desktop-width) {
-      padding-top: 100px;
+      padding-top: 98px;
       min-height: 287px;
     }
   }
 
   &--video {
-    padding-top: 17px;
+    padding-top: 18px;
     max-width: 320px;
     min-height: 173px;
     border: none;
 
     @media screen and (min-width: $tablet-width) {
-      padding-top: 60px;
+      padding-top: 56px;
       max-width: 490px;
       min-height: 245px;
     }
@@ -138,17 +138,21 @@
   }
 
   &--gallery {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
 
     @media screen and (min-width: $tablet-width) {
-      margin-bottom: 29px;
+      margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      margin-bottom: 32px;
     }
   }
 
   &--video {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
 
-    @media screen and (min-width: $desktop-width) {
+    @media screen and (min-width: $tablet-width) {
       margin-bottom: 32px;
     }
   }

@@ -39,9 +39,10 @@
 
   @media screen and (min-width: $tablet-width) {
     min-height: 500px;
+    margin-bottom: 40px;
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: $desktop-width) {
     margin-bottom: 84px;
   }
 }

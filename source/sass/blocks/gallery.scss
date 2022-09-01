@@ -22,6 +22,8 @@
 }
 
 .gallery__item {
+  min-height: 425px;
+
   &:first-of-type {
     @media screen and (min-width: $tablet-width) {
       grid-column: 1 / span 2;
@@ -30,5 +32,13 @@
     @media screen and (min-width: $desktop-width) {
       grid-column: 1 / span 3;
     }
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    min-height: 347px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    min-height: 267px;
   }
 }

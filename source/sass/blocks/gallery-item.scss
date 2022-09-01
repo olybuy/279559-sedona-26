@@ -1,6 +1,6 @@
 .gallery-item {
   position: relative;
-  padding: 24px 20px 25px 20px;
+  padding: 24px 20px 20px;
   margin: 0;
   box-sizing: border-box;
   border-bottom: 1px solid $mobileBorderColor;
@@ -15,7 +15,7 @@
   @media screen and (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     width: 100%;
     padding: 22px 20px 15px 20px;
     background-color: $captionPrimaryColor;
@@ -28,6 +28,10 @@
     padding: 22px 20px 15px 20px;
     background-color: rgba(0, 0, 0, 0.3);
     color: $fontSecondaryColor;
+
+    &--align {
+      padding: 17px 20px 20px 20px;
+    }
   }
 }
 
@@ -55,7 +59,7 @@
   padding: 0;
   margin: 0;
 
-  @include font-style(14px, 21px, 700);
+  @include font-style(14px, 22px, 700);
 
   @media screen and (min-width: $desktop-width) {
     color: $fontSecondaryColor;
@@ -96,6 +100,16 @@
 
 .gallery-item__caption-rate {
   display: flex;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-top: 5px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    &--align {
+      margin-top: 10px;
+    }
+  }
 }
 
 .gallery-item__caption-rate-button {

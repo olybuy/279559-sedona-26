@@ -8,11 +8,14 @@
   }
 
   @media screen and (min-width: $tablet-width) {
-    margin-bottom: 47px;
+    margin-bottom: 48px;
+    min-height: 338px;
+    box-sizing: border-box;
   }
 
   @media screen and (min-width: $desktop-width) {
-    margin-bottom: 57px;
+    margin-bottom: 54px;
+    min-height: 340px;
   }
 }
 

@@ -16,7 +16,7 @@
   @media screen and (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 48px;
+    padding-bottom: 0;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -106,5 +106,9 @@
 
   @media screen and (min-width: $tablet-width) {
     @include font-style(14px, 21px, 400);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-top: 3px;
   }
 }

@@ -1,10 +1,12 @@
 .group-radio-field {
   @media screen and (min-width: $tablet-width) {
-    margin-bottom: 58px;
+    min-height: 210px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
   }
 
   @media screen and (min-width: $desktop-width) {
-    margin-bottom: 48px;
+    min-height: 190px;
   }
 }
 
@@ -16,7 +18,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 56px;
   }
 }
 
@@ -41,6 +43,7 @@
 
   @media screen and (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 64px;
 
     &--wide {

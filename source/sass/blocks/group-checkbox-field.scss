@@ -1,0 +1,51 @@
+.group-checkbox-field {
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 14px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 62px;
+  }
+}
+
+.group-checkbox-field__title {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 38px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.group-checkbox-field__field {
+  margin-bottom: 36px;
+}
+
+.group-checkbox-field__field:last-child {
+  margin-bottom: 0;
+}
+
+.group-checkbox-field__label-wrapper {
+  @media screen and (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &--wide {
+      padding-left: 84px;
+      padding-right: 54px;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    column-gap: 64px;
+
+    &--wide {
+      padding-left: 45px;
+      padding-right: 0;
+    }
+  }
+}

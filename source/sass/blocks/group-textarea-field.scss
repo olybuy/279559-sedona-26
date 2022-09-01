@@ -1,0 +1,7 @@
+.group-textarea-field__title {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
+}

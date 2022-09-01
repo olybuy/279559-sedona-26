@@ -86,12 +86,13 @@
       }
 
       .form-group__label-wrapper {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        column-gap: 64px;
       }
 
       .form-group__label-wrapper--wide {
         padding-left: 53px;
+        padding-right: 0;
       }
 
       .form-group__field:nth-child(3n) {
@@ -139,12 +140,13 @@
       }
 
       .form-group__label-wrapper {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        display: flex;
+        column-gap: 64px;
       }
 
       .form-group__label-wrapper--wide {
         padding-left: 45px;
+        padding-right: 0;
       }
     }
   }

@@ -76,7 +76,12 @@
         </figure>
 
         <figure class="gallery__item gallery-item">
-          <img class="gallery-item__image" src="img/jpg/photo-2-mobile.jpg" width="280" height="280" alt="Широкое шоссе, уходящее в закат.">
+          <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="img/jpg/photo-2-desktop.webp 1x, img/jpg/photo-2-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/jpg/photo-2-tablet.webp 1x, img/jpg/photo-2-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/jpg/photo-2-mobile.webp 1x, img/jpg/photo-2-mobile@2x.webp 2x">
+            <img class="gallery-item__image" src="img/jpg/photo-2-mobile.jpg" width="280" height="280" alt="Широкое шоссе, уходящее в закат.">
+          </picture>
           <figcaption class="gallery-item__caption">
             <div class="gallery-item__caption-copyright">
               <p class="gallery-item__title">Местная растительность</p>

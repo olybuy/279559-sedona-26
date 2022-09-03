@@ -16,6 +16,7 @@
   }
 
   @media screen and (min-width: $tablet-width) {
+    position: static;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 
@@ -109,6 +110,7 @@
   }
 
   @media screen and (min-width: $tablet-width) {
+    background-color: $containerBackgroundColor;
     border: none;
     box-shadow: none;
   }

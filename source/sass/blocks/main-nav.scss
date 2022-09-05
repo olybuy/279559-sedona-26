@@ -16,6 +16,7 @@
   }
 
   @media screen and (min-width: $tablet-width) {
+    position: static;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 
@@ -40,7 +41,7 @@
 .main-nav__toggle {
   position: absolute;
   top: 17px;
-  right: 16px;
+  right: 20px;
   display: block;
   width: 23px;
   height: 23px;
@@ -109,6 +110,7 @@
   }
 
   @media screen and (min-width: $tablet-width) {
+    background-color: $containerBackgroundColor;
     border: none;
     box-shadow: none;
   }

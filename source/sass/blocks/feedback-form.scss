@@ -1,5 +1,5 @@
 .feedback-form {
-  padding: 0 20px 0 20px;
+  padding: 0 20px 26px 20px;
 
   @media screen and (min-width: $tablet-width) {
     padding: 0 60px 64px 60px;
@@ -11,9 +11,16 @@
 }
 
 .feedback-form__wrapper {
+  padding-bottom: 22px;
+
   @media screen and (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    grid-template-columns: 493px 1fr;
   }
 }
 
@@ -49,20 +56,26 @@
       padding-left: 64px;
     }
   }
-}
 
-.feedback-form__group--wide {
-  @media screen and (min-width: $tablet-width) {
-    grid-column: 1 / span 2;
+  &--wide {
+    @media screen and (min-width: $tablet-width) {
+      grid-column: 1 / span 2;
 
-    &::before {
-      position: absolute;
-      top: 13px;
-      display: block;
-      width: 100%;
-      height: 1px;
-      background-color: $desktopBorderColor;
-      content: "";
+      &::before {
+        position: absolute;
+        top: 13px;
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: $desktopBorderColor;
+        content: "";
+      }
+    }
+  }
+
+  &--high::before {
+    @media screen and (min-width: $tablet-width) {
+      top: 26px;
     }
   }
 }
@@ -85,6 +98,7 @@
 
 .feedback-form__note {
   display: block;
+  margin-left: auto;
   text-transform: uppercase;
   text-align: center;
 
@@ -92,5 +106,9 @@
 
   @media screen and (min-width: $tablet-width) {
     @include font-style(14px, 21px, 400);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-top: 3px;
   }
 }

@@ -40,15 +40,15 @@
 .advantages-item-advanced__content-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  padding: 18px;
-  min-height: 225px;
+  padding: 39px 10px 0;
+  min-height: 191px;
   text-align: center;
   box-sizing: border-box;
 
-  &--first {
-    padding-top: 51px;
+  &--true-town {
+    padding: 71px 22px 40px 16px;
     max-width: 320px;
     min-height: 211px;
   }
@@ -58,15 +58,29 @@
   }
 
   @media screen and (min-width: $tablet-width) {
-    padding: 32px;
+    padding: 42px 22px;
     max-width: 248px;
     min-height: 236px;
+
+    &--true-town {
+      padding-top: 40px;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 51px 10px 50px 10px;
+    max-width: 295px;
+    min-height: 256px;
+
+    &--true-town {
+      padding: 47px 10px 47px 12px;
+    }
   }
 }
 
 .advantages-item-advanced__title {
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 16px;
   color: $fontSecondaryColor;
 
   @include font-style(18px, 26px, 700);
@@ -74,6 +88,24 @@
 
   @media screen and (min-width: $tablet-width) {
     @include font-style(21px, 26px, 700);
+
+    margin-bottom: 25px;
+
+    &--true-town {
+      margin-bottom: 23px;
+    }
+
+    &--bridge {
+      @include break;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    max-width: 192px;
+
+    &--true-town {
+      margin-bottom: 24px;
+    }
   }
 }
 
@@ -81,6 +113,18 @@
   margin: 0;
 
   @include font-style(14px, 21px, 400);
+
+  @media screen and (min-width: $tablet-width) {
+    &--slim {
+      width: 160px;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    &--slim {
+      width: 230px;
+    }
+  }
 }
 
 .advantages-item-advanced__photo {
@@ -88,6 +132,10 @@
   padding: 0;
   width: 100%;
   object-fit: cover;
+
+  @media screen and (min-width: $tablet-width) {
+    height: 256px;
+  }
 }
 
 .advantages-item-advanced__sublist {

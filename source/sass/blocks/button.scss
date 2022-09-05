@@ -36,13 +36,26 @@
     margin: 0;
 
     @media screen and (min-width: $tablet-width) {
+      padding: 18px 60px 14px 49px;
       min-width: 324px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      min-width: 384px;
     }
   }
 
   &--search {
-    max-width: 284px;
     padding: 16px;
+    text-align: center;
+    margin-left: 18px;
+    margin-right: 18px;
+
+    @media screen and (min-width: $tablet-width) {
+      margin: 0 auto;
+      padding: 14px 16px 17px;
+      max-width: 458px;
+    }
   }
 
   &--modal-approve {

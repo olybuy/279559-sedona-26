@@ -12,13 +12,13 @@
 
 @mixin add-number {
   &::after {
-    margin-top: 11px;
+    margin-top: 12px;
     display: block;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     counter-increment: advantages;
-    content: "– №" counter(advantages) " –";
+    content: "— №" counter(advantages) " —";
   }
 }
 
@@ -38,5 +38,17 @@
     background-position: center;
     content: "";
     z-index: 2;
+  }
+}
+
+@mixin break {
+  .br {
+    display: block;
+  }
+}
+
+@mixin inline {
+  .br {
+    display: inline;
   }
 }

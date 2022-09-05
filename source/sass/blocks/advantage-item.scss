@@ -1,0 +1,94 @@
+.advantages-item {
+  padding: 0 18px;
+  background-color: $secondaryColor;
+  box-sizing: border-box;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.advantages-item__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 24px 18px;
+  text-align: center;
+  border-bottom: 1px solid #d6d6d6;
+
+  @media screen and (min-width: $tablet-width) {
+    justify-content: flex-start;
+    align-items: center;
+    border: 0;
+    padding: 40px 20px;
+    max-width: 228px;
+    min-height: 256px;
+    box-sizing: border-box;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    max-width: 350px;
+    padding: 42px 20px;
+  }
+}
+
+.advantages-item__title {
+  margin: 0;
+  margin-bottom: 17px;
+  color: $titleColor;
+
+  @include font-style(18px, 26px, 700);
+  @include add-number;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 24px;
+    max-width: 155px;
+
+    @include font-style(21px, 26px, 700);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 25px;
+    max-width: 155px;
+  }
+
+  &--square {
+    margin-top: 2px;
+
+    @media screen and (min-width: $tablet-width) {
+      margin-top: 0;
+    }
+  }
+}
+
+.advantages-item__description {
+  margin: 0;
+
+  @include font-style(14px, 21px, 400);
+
+  @media screen and (min-width: $tablet-width) {
+    .nowrap {
+      white-space: nowrap;
+    }
+
+    &--few {
+      @include break;
+    }
+
+    &--road {
+      @include break;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    &--few {
+      @include inline;
+    }
+
+    &--road {
+      margin-left: 5px;
+    }
+  }
+}

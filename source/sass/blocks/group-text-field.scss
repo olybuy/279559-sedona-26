@@ -1,0 +1,61 @@
+.group-text-field {
+  &:first-of-type {
+    padding-bottom: 39px;
+
+    @media screen and (min-width: $tablet-width) {
+      padding-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 48px;
+    min-height: 338px;
+    box-sizing: border-box;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 54px;
+    min-height: 340px;
+  }
+}
+
+.group-text-field__title {
+  margin-bottom: 20px;
+  padding: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 26px;
+  }
+
+  &--left {
+    @media screen and (min-width: $tablet-width) {
+      margin-right: 40px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      margin-right: 102px;
+    }
+  }
+
+  &--right {
+    @media screen and (min-width: $tablet-width) {
+      margin-left: -20px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      margin-left: 30px;
+    }
+  }
+}
+
+.group-text-field__field {
+  margin-bottom: 16px;
+}
+
+.group-text-field__field:last-child {
+  margin-bottom: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
+}

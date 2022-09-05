@@ -1,4 +1,14 @@
+.location {
+  padding-bottom: 10px;
+  height: 350px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
 .location__image {
   width: 100%;
   object-fit: cover;
+  display: block;
 }

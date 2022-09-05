@@ -4,4 +4,12 @@
   text-decoration: none;
 
   @include font-style(21px, 26px, 700);
+
+  &:hover {
+    color: $primaryColor;
+  }
+
+  &:active {
+    color: $linkDown;
+  }
 }

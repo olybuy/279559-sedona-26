@@ -1,36 +1,52 @@
 .modal-approve {
   position: relative;
   max-width: 320px;
-  padding: 39px 20px 128px 20px;
+  min-height: 323px;
+  padding: 39px 20px 10px;
   margin: auto;
   text-align: center;
   background: $containerBackgroundColor;
   box-sizing: border-box;
 
   @media screen and (min-width: $tablet-width) {
-    width: 640px;
-    padding: 53px 99px 176px 97px;
+    min-width: 640px;
+    min-height: 347px;
+    padding: 53px 99px 0 97px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 50px;
   }
 }
 
 .modal-approve__title {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 24px;
   color: $titleColor;
   text-transform: uppercase;
 
-  @include font-style(21px, 26px, 700);
+  @include font-style(18px, 26px, 700);
 
   @media screen and (min-width: $tablet-width) {
     @include font-style(30px, 26px, 700);
+    margin-bottom: 28px;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 32px;
   }
 }
 
 .modal-approve__approve-message {
   margin: 0;
+  padding: 0 20px;
   text-transform: uppercase;
 
   @include font-style(14px, 21px, 400);
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .modal-approve__wrapper {

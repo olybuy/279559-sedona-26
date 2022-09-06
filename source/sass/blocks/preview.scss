@@ -44,7 +44,7 @@
     }
 
     @media screen and (min-width: $desktop-width) {
-      padding-top: 61px;
+      padding-top: 60px;
       min-height: 207px;
     }
   }
@@ -135,6 +135,10 @@
 
       @include font-style(30px, 26px, 700);
     }
+
+    @media screen and (min-width: $desktop-width) {
+      margin-bottom: 30px;
+    }
   }
 
   &--gallery {
@@ -203,6 +207,10 @@
   &--search {
     @media screen and (min-width: $tablet-width) {
       @include break;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      @include font-style(14px, 22px, 400);
     }
   }
 }

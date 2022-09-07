@@ -119,24 +119,3 @@
     }
   }
 }
-
-.gallery-item__caption-rate-button {
-  width: 23px;
-  height: 21px;
-  padding: 0;
-  margin-right: 9px;
-  color: #000000;
-  border: none;
-  background-color: transparent;
-  opacity: 0.3;
-  cursor: pointer;
-
-  @media screen and (min-width: $tablet-width) {
-    margin-right: 4px;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    color: $fontSecondaryColor;
-    opacity: 1;
-  }
-}

@@ -26,6 +26,10 @@
     max-width: 228px;
     min-height: 256px;
     box-sizing: border-box;
+
+    &--road {
+      max-width: 190px;
+    }
   }
 
   @media screen and (min-width: $desktop-width) {

@@ -105,6 +105,8 @@
   @include font-style(12px, 21px, 400);
 
   @media screen and (min-width: $tablet-width) {
+    margin-top: 5px;
+
     @include font-style(14px, 21px, 400);
   }
 

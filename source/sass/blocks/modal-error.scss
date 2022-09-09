@@ -1,19 +1,32 @@
 .modal-error {
   max-width: 400px;
-  padding: 45px 42px 35px 41px;
+  min-height: 280px;
+  padding: 45px 42px 10px 41px;
   margin: auto;
   text-align: center;
   background-color: $containerBackgroundColor;
   box-sizing: border-box;
+
+  @media screen and (min-width: $tablet-width) {
+    min-height: 347px;
+    padding-top: 48px;
+  }
 }
 
 .modal-error__title {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 26px;
   color: $titleColor;
   text-transform: uppercase;
 
-  @include font-style(21px, 26px, 700);
+  @include font-style(18px, 26px, 700);
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 22px;
+
+    @include font-style(30px, 40px, 700);
+    @include break;
+  }
 }
 
 .modal-error__error-message {
@@ -24,6 +37,6 @@
   @include font-style(14px, 21px, 400);
 
   @media screen and (min-width: $tablet-width) {
-    margin-bottom: 49px;
+    margin-bottom: 48px;
   }
 }

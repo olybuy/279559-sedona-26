@@ -12,11 +12,15 @@
 }
 
 .gallery-item__caption {
+  margin: 0 auto;
+  max-width: 324px;
+
   @media screen and (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
+    max-width: 1200px;
     padding: 22px 20px 15px 20px;
     background-color: $captionPrimaryColor;
     box-sizing: border-box;
@@ -81,19 +85,23 @@
 
 .gallery-item__image {
   display: block;
+  margin: 0 auto;
   margin-bottom: 15px;
   width: 100%;
   object-fit: cover;
+  max-width: 324px;
 
   @media screen and (min-width: $tablet-width) {
     height: 267px;
     width: 100%;
     margin: 0;
+    max-width: 1200px;
   }
 
   &--wide {
     @media screen and (min-width: $tablet-width) {
       height: 400px;
+      max-width: 1200px;
     }
   }
 }
@@ -109,26 +117,5 @@
     &--align {
       margin-top: 10px;
     }
-  }
-}
-
-.gallery-item__caption-rate-button {
-  width: 23px;
-  height: 21px;
-  padding: 0;
-  margin-right: 9px;
-  color: #000000;
-  border: none;
-  background-color: transparent;
-  opacity: 0.3;
-  cursor: pointer;
-
-  @media screen and (min-width: $tablet-width) {
-    margin-right: 4px;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    color: $fontSecondaryColor;
-    opacity: 1;
   }
 }
